@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0552",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-6/scene-0552.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "truck",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "truck",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle waits at an intersection, allows a bus to pass across, and then proceeds straight down the urban street past parked buses and delivery trucks.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

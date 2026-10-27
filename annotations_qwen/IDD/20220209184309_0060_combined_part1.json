@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "20220209184309_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "A motorcycle is approaching from the front on a rural road at night.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

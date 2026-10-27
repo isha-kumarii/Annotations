@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-0185",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "Stop sign",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking on sidewalk near building entrance",
+    "time_window": {
+      "start_sec": "00:04",
+      "end_sec": "00:13"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 5,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

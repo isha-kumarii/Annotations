@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0035",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0035.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "turn left"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight along an urban road passing parked vehicles, road works signs, and passing buses and trucks.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

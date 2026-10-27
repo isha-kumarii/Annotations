@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-0185",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Group of pedestrians standing at curb near building entrance",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:04"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

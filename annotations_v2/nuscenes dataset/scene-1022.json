@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-1022",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1022.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn left"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "turn left"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches an intersection at night, yields to pedestrians crossing the road, and performs a left turn while observing other vehicles in the area.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

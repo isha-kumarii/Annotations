@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-1057",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1057.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle drives straight on a dark, wet semi-urban road at night, passing an oncoming van negotiating a curve.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

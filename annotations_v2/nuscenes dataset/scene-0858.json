@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "video_id": "scene-0858",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-8/scene-0858.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "turn right"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "turn right"
+    },
+    {
+      "actor_type": "motorbike",
+      "maneuver": "turn right"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates through an intersection while yielding to intersecting traffic including a bus, a car, and motorbikes.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

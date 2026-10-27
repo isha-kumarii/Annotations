@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0019_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Parked delivery van blocking part of ego lane with pedestrians and a cyclist near the intersection",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

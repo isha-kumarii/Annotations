@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0967",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0967.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "motorbike",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight down an urban road while pedestrians and a parked motorbike are present on the sidewalk.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

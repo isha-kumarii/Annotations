@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0917",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0917.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "yield"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road left to right"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "turn right"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle approaches an intersection and slows down / yields to pedestrians crossing the road ahead.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

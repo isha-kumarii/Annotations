@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "video_id": "scene-1004",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-1004.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "speed limit",
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates an urban road at night while pedestrians cross near a zebra crossing and multiple traffic signs are present.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

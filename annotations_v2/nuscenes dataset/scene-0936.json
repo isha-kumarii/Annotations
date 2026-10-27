@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "video_id": "scene-0936",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0936.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "speed limit",
+      "direction sign"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle exits the campus driveway, comes to a junction, observes directional and speed limit road signs, and turns right onto a multi-lane urban road.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

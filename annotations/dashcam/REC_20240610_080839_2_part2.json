@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_080839_2_part2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Stop",
+    "key_event": "Multiple pedestrians crossing the ego lane from right to left while a traffic marshal stands in front",
+    "time_window": {
+      "end_sec": "00:20",
+      "start_sec": "00:15"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 10,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

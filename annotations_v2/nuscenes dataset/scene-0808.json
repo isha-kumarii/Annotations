@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0808",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-8/scene-0808.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "turn right"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle proceeds through a signalized urban intersection during rainy conditions while cross traffic and a truck clear the area.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

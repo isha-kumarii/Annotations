@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0017",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0017.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches a signalized intersection with a red traffic light, stopping as pedestrians cross the road at a crosswalk and other vehicles queue ahead.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

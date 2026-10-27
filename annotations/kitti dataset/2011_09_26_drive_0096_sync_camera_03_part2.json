@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0096_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Lane change",
+    "key_event": "Temporary bollards placed in center of ego lane requiring avoidance",
+    "time_window": {
+      "end_sec": "00:04",
+      "start_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bicycle",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "bollard",
+      "count": 2,
+      "relative_position": "ego_lane"
+    }
+  ]
+}

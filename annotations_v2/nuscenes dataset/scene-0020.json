@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0020",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0020.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 1,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "slow"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight along an urban building perimeter past parked cars and pedestrians walking near the sidewalk, eventually approaching an intersection with a slow sign.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

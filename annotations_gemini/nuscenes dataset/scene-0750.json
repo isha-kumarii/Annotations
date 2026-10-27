@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0750",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Waiting at intersection for traffic signal to turn green, then proceeding straight.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:20"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

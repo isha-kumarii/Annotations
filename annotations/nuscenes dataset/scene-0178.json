@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0178",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "Pedestrian crossing into ego lane from right",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

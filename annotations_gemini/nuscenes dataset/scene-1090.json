@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-1090",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking alongside the road at night",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:03"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

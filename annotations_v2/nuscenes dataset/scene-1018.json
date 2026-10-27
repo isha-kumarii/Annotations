@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-1018",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1018.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle proceeds straight through a signalized intersection at night, following other vehicles along the urban road.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

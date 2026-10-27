@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AutonomousDrivingScenarioAnnotationV2",
+  "description": "Enhanced schema for autonomous driving scenario understanding and hybrid retrieval.",
+  "type": "object",
+  "required": [
+    "metadata",
+    "road_network",
+    "environmental_conditions",
+    "ego_vehicle",
+    "npc_actors",
+    "event_details"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["video_id", "dataset"],
+      "properties": {
+        "video_id": {
+          "type": "string",
+          "description": "Identifier of the video"
+        },
+        "dataset": {
+          "type": "string",
+          "description": "Name of the source dataset (e.g. Dashcam, KITTI, IDD, NuScenes)"
+        },
+        "video_path": {
+          "type": "string",
+          "description": "Relative path to the video file"
+        }
+      },
+      "additionalProperties": false
+    },
+    "road_network": {
+      "type": "object",
+      "required": [
+        "road_type",
+        "road_layout",
+        "no_of_lanes",
+        "intersection_control",
+        "traffic_sign",
+        "traffic_light"
+      ],
+      "properties": {
+        "road_type": {
+          "type": "string",
+          "enum": ["highway", "rural", "urban", "semi-urban"]
+        },
+        "road_layout": {
+          "type": "string",
+          "enum": ["straight road", "curved road", "intersection", "roundabout"]
+        },
+        "no_of_lanes": {
+          "type": ["integer", "string"],
+          "description": "Number of lanes (e.g., 0, 1, 2, 3, 4, ...)"
+        },
+        "intersection_control": {
+          "type": "string",
+          "enum": ["signalized", "unsignalized", "none"]
+        },
+        "traffic_sign": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Observed traffic signs (e.g. stop, no entry, merge, yield, speed limit)"
+        },
+        "traffic_light": {
+          "type": "string",
+          "enum": ["red", "green", "yellow", "none"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "environmental_conditions": {
+      "type": "object",
+      "required": ["weather", "visibility", "lighting"],
+      "properties": {
+        "weather": {
+          "type": "string",
+          "enum": ["clear", "overcast", "rain", "fog", "snow", "wet", "haze"]
+        },
+        "visibility": {
+          "type": "string",
+          "enum": ["Good", "Moderate", "Poor", "Unknown"]
+        },
+        "lighting": {
+          "type": "string",
+          "enum": ["Daylight", "Twilight", "Night", "Unknown"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "ego_vehicle": {
+      "type": "object",
+      "required": ["maneuver"],
+      "properties": {
+        "maneuver": {
+          "type": "string",
+          "enum": [
+            "go straight",
+            "follow",
+            "turn left",
+            "turn right",
+            "lane change left",
+            "lane change right",
+            "stop",
+            "yield",
+            "U-turn",
+            "overtake",
+            "emergency brake",
+            "cut-in",
+            "cut-out"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "npc_actors": {
+      "type": "array",
+      "description": "List of observed non-player character road actors and their maneuvers",
+      "items": {
+        "type": "object",
+        "required": ["actor_type", "maneuver"],
+        "properties": {
+          "actor_type": {
+            "type": "string",
+            "description": "Class of actor (pedestrian, animal, car, bicycle, truck, bus, motorbike, auto_rickshaw)"
+          },
+          "maneuver": {
+            "type": "string",
+            "enum": [
+              "go straight",
+              "follow",
+              "turn left",
+              "turn right",
+              "lane change left",
+              "lane change right",
+              "stop",
+              "yield",
+              "crossing road left to right",
+              "crossing road right to left",
+              "U-turn",
+              "overtake",
+              "stationary",
+              "unknown"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "event_details": {
+      "type": "object",
+      "required": ["event_description", "event_class", "event_pattern", "event_severity"],
+      "properties": {
+        "event_description": {
+          "type": "string",
+          "description": "Descriptive summary of the primary driving event"
+        },
+        "event_class": {
+          "type": "string",
+          "enum": [
+            "Traffic Control",
+            "Vehicle Interaction",
+            "Road and Environment",
+            "Obstacle Detection",
+            "Animal and Pedestrian",
+            "Sudden and Unexpected"
+          ]
+        },
+        "event_pattern": {
+          "type": "string",
+          "enum": ["Co-linear", "Cross-linear", "Causal", "Likelihood", "Predictive"]
+        },
+        "event_severity": {
+          "type": "string",
+          "enum": ["High", "medium", "low"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

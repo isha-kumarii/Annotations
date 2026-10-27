@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_074546_2_part3",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Causal",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Ego stopped behind a van at a traffic signal with multiple motorcycles around",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 8,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

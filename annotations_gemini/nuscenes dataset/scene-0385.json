@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0385",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Yield",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle navigates through an urban intersection with yield signage.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0939",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0939.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "motorbike",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows a Coca-Cola delivery truck on an urban road as the truck maneuvers through a slight curve and junction.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

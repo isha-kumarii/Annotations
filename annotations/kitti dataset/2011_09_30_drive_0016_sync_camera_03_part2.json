@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_30_drive_0016_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Ego follows a white van in the lane while approaching/passing a green traffic signal at an intersection.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    }
+  ]
+}

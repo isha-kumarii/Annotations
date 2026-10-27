@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0422",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-4/scene-0422.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows a curved road in an urban environment while encountering an oncoming bus, a stopped car ahead, and pedestrians crossing the road.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

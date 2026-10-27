@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_141859_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Road & Environment",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Left Turn",
+    "key_event": "Ego vehicle proceeds through an open security gate and executes a left turn onto a wet residential road",
+    "time_window": {
+      "start_sec": "00:04",
+      "end_sec": "00:14"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 5,
+      "relative_position": "front_right"
+    }
+  ]
+}

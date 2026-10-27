@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0023_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Cyclist riding from left curb into/along ego lane ahead of vehicle",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_ego_lane"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 6,
+      "relative_position": "front_left"
+    }
+  ]
+}

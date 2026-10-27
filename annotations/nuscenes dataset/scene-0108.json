@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0108",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Traffic cones occupying front-right area while pedestrians walk on left sidewalk and parked cars line the curb",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "cone",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

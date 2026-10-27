@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0030",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0030.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "yield"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "motorbike",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches an intersection and yields to crossing traffic before coming to a stop.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

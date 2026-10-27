@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "video_id": "scene-0008",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0008.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "speed limit"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road left to right"
+    },
+    {
+      "actor_type": "motorbike",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle navigates an urban environment, passing parked delivery vehicles and turning right at a curved junction while pedestrians and other vehicles are present.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

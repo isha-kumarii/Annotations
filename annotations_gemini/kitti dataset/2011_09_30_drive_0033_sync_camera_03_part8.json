@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_09_30_drive_0033_sync_camera_03_part8",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": true,
+    "traffic_control": "Yield",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Right Turn",
+    "key_event": "Ego approaches and navigates an intersection with yield sign control.",
+    "time_window": {
+      "start_sec": "00:06",
+      "end_sec": "00:12"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

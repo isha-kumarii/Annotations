@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-0611",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0611.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows traffic through an urban intersection under rainy weather conditions and then performs a right turn.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

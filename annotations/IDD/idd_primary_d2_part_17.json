@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "idd_primary_d2_part_17",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Bicycle crosses from the right in front of the ego while pedestrians step off the curb at the corner.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "cart",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

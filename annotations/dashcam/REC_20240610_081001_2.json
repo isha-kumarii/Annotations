@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_081001_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Motorcycle moves into ego lane from front-left",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front/front_left/side_right"
+    },
+    {
+      "class": "car",
+      "count": 6,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "bus",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

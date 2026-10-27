@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0854",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-8/scene-0854.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows the lead car through a signalized intersection under overcast daylight conditions.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

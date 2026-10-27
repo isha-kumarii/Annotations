@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0798",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-8/scene-0798.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "van",
+      "maneuver": "follow"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle travels straight through a signalized urban intersection following traffic, maintaining a safe distance behind lead vehicles.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

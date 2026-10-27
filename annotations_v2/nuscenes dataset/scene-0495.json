@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0495",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0495.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    },
+    {
+      "actor_type": "truck",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road left to right"
+    }
+  ],
+  "event_details": {
+    "event_description": "Pedestrians cross the urban road ahead of the ego vehicle between parked cars and a delivery truck.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "medium"
+  }
+}

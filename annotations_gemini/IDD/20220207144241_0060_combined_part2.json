@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220207144241_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Ego vehicle follows leading traffic and a truck overtaking on the left side under a flyover.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

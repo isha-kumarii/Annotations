@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0335",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle waits at intersection and proceeds straight after traffic light turns green.",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:11"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front"
+    }
+  ]
+}

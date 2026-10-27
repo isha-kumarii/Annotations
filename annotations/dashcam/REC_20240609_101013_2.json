@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_101013_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walks from left toward/into crossing in front of ego vehicle",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 6,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

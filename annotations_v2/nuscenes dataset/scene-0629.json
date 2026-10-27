@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0629",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-6/scene-0629.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "turn left"
+    },
+    {
+      "actor_type": "truck",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches an intersection in rainy weather, yields to cross traffic, and turns right onto a wet urban road past oncoming delivery trucks.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

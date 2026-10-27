@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0430",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-5/scene-0430.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows the road layout and passes by a bus stop, interacting minimally with surrounding traffic in a semi-urban environment.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

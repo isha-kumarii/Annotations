@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-0630",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-6/scene-0630.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle approaches and drives through an intersection controlled by a stop sign during wet weather conditions.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

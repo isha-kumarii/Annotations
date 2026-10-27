@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0108",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Right Turn",
+    "key_event": "Ego turns right past parked cars and construction barriers.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

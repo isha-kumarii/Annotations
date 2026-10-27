@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0438",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-5/scene-0438.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight along an urban road passing bus stops and business buildings under daylight conditions.",
+    "event_class": "Road and Environment",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-1005",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-1005.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates through an urban intersection at night, passing a parked bus and proceeding past oncoming traffic.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220209201635_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Sudden & Unexpected",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Follow",
+    "key_event": "Navigating past emergency vehicles and congested traffic at night",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:08"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 2,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0363",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-4/scene-0363.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "truck",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle navigates through an urban area, turns right onto another road, and drives past parked vehicles along the side of the street.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

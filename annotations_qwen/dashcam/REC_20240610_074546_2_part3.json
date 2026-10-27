@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_074546_2_part3",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Ego vehicle following lead car in same lane while a motorcycle and auto-rickshaw pass by.",
+    "time_window": {
+      "start_sec": "00:05",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "right"
+    },
+    {
+      "class": "auto-rickshaw",
+      "count": 1,
+      "relative_position": "right"
+    }
+  ]
+}

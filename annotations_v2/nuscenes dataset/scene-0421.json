@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0421",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-4/scene-0421.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches a parking/access gate barrier on a curved urban road and comes to a stop.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

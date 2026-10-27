@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "20220214180622_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Small pickup truck occupies ego lane while pedestrians and motorcycles move into/around the lane from the sides.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 8,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

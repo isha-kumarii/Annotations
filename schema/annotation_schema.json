@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VideoScenarioAnnotation",
+  "description": "Schema for autonomous driving video scenario and behavior annotations.",
+  "type": "object",
+  "required": ["metadata", "environment", "scenario_behavior", "actors"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["video_id", "dataset"],
+      "properties": {
+        "video_id": {
+          "type": "string",
+          "description": "Identifier of the video (e.g., 'IDD_0234')"
+        },
+        "dataset": {
+          "type": "string",
+          "description": "Name of the source dataset (e.g., 'IDD')"
+        }
+      },
+      "additionalProperties": false
+    },
+    "environment": {
+      "type": "object",
+      "required": ["road_type", "intersection", "traffic_control", "weather", "lighting"],
+      "properties": {
+        "road_type": {
+          "type": "string",
+          "enum": ["Urban", "Semi-urban", "Rural", "Highway", "Unknown"],
+          "description": "Type of road environment"
+        },
+        "intersection": {
+          "type": "boolean",
+          "description": "Whether an intersection is present (true/false)"
+        },
+        "traffic_control": {
+          "type": "string",
+          "enum": ["Traffic signal", "Stop sign", "Yield", "None", "Unknown"],
+          "description": "Active traffic control element"
+        },
+        "weather": {
+          "type": "string",
+          "enum": ["Clear", "Rain", "Fog", "Cloudy"],
+          "description": "Weather condition affecting visibility and driving"
+        },
+        "lighting": {
+          "type": "string",
+          "enum": ["Day", "Night", "Dawn/Dusk"],
+          "description": "Lighting condition during the recording"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scenario_behavior": {
+      "type": "object",
+      "required": ["event_type", "event_pattern", "severity", "ego_maneuver", "key_event", "time_window"],
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "enum": [
+            "Traffic Control",
+            "Vehicle Interaction",
+            "Road & Environment",
+            "Obstacle Detection",
+            "Animal & Pedestrian",
+            "Sudden & Unexpected"
+          ],
+          "description": "Primary taxonomy event classification"
+        },
+        "event_pattern": {
+          "type": "string",
+          "enum": [
+            "Co-linear",
+            "Cross-linear",
+            "Causal",
+            "Likelihood"
+          ],
+          "description": "Scenario interaction pattern"
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["Low", "Medium", "Moderate", "High"],
+          "description": "Criticality/risk level of the event"
+        },
+        "ego_maneuver": {
+          "type": "string",
+          "enum": [
+            "Go straight",
+            "Left Turn",
+            "Right Turn",
+            "Lane change",
+            "Cut-in",
+            "Cut-out",
+            "Overtake",
+            "Emergency brake",
+            "Yield",
+            "Follow",
+            "Stop",
+            "Other"
+          ],
+          "description": "Ego vehicle's primary maneuver during the event"
+        },
+        "key_event": {
+          "type": "string",
+          "description": "Concise natural language summary of the key event"
+        },
+        "time_window": {
+          "type": "object",
+          "required": ["start_sec", "end_sec"],
+          "properties": {
+            "start_sec": {
+              "type": ["string", "number"],
+              "description": "Timestamp or seconds when the event begins (e.g. '00:05' or 5)"
+            },
+            "end_sec": {
+              "type": ["string", "number"],
+              "description": "Timestamp or seconds when the event concludes (e.g. '00:12' or 12)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "actors": {
+      "type": "array",
+      "description": "List of interacting or relevant actors in the scene",
+      "items": {
+        "type": "object",
+        "required": ["class", "count", "relative_position"],
+        "properties": {
+          "class": {
+            "type": "string",
+            "description": "Class of actor (e.g., 'car', 'pedestrian', 'bicycle', 'motorcycle', 'truck', 'bus', 'animal')"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Number of entities observed in this class and position"
+          },
+          "relative_position": {
+            "type": "string",
+            "description": "Position relative to ego vehicle (e.g. 'front_right', 'sidewalk_left', 'front_left', 'ego_lane', 'rear')"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

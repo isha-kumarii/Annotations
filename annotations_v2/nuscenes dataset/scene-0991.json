@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0991",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0991.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 1,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "Pedestrians walk across the road ahead of the stationary ego vehicle in a parking lot area.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

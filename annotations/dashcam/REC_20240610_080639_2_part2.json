@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_080639_2_part2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "Multiple pedestrians crossing across the ego lane, blocking forward path",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 7,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 2,
+      "relative_position": "front_left"
+    }
+  ]
+}

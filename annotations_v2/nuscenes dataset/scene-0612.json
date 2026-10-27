@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0612",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0612.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "go straight"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates an urban intersection making a right turn under wet road conditions.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

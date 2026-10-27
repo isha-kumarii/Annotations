@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0236",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-3/scene-0236.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "follow"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "turn left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows a delivery truck through an urban intersection under green traffic light conditions, passing other surrounding city traffic.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

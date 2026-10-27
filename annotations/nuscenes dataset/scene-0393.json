@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0393",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Green traffic light allowing ego to proceed through intersection",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    }
+  ]
+}

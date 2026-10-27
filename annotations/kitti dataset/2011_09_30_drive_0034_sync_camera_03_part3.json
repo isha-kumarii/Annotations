@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_09_30_drive_0034_sync_camera_03_part3",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Parked cars partially protruding into the ego lane on the left",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_left"
+    }
+  ]
+}

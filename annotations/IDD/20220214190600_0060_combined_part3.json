@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220214190600_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Follow",
+    "key_event": "Vehicle from right side enters ego lane, cutting in ahead of lead car",
+    "time_window": {
+      "end_sec": "00:09",
+      "start_sec": "00:07"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

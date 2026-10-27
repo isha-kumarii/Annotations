@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0976",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0976.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    }
+  ],
+  "event_details": {
+    "event_description": "Pedestrians cross the intersection from right to left in front of the ego vehicle while the traffic light is red.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0668",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-7/scene-0668.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "crossing road right to left"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "crossing road left to right"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle approaches an intersection in an urban environment with crossing traffic and nearby construction zones.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

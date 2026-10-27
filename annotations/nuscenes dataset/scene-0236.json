@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "scene-0236",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Follow",
+    "key_event": "Bus passes truck on left and moves ahead, encroaching into ego's forward space",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

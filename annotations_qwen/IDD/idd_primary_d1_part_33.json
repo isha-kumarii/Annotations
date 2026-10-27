@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "idd_primary_d1_part_33",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "A pedestrian walks across the road in front of the ego vehicle.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

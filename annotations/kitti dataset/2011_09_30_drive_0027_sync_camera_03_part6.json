@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_30_drive_0027_sync_camera_03_part6",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Red van pulls out from right-side parking into ego lane in front of traffic",
+    "time_window": {
+      "end_sec": "00:09",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

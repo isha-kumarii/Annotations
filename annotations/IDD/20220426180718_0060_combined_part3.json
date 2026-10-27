@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220426180718_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "School bus passes close on the right reducing lateral clearance to ego",
+    "time_window": {
+      "end_sec": "00:20",
+      "start_sec": "00:15"
+    }
+  },
+  "actors": [
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

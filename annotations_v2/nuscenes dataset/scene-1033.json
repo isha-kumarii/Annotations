@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-1033",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-1033.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "yield"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "motorbike",
+      "maneuver": "crossing road right to left"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle slows and yields at an intersection while a motorbike crosses from right to left.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

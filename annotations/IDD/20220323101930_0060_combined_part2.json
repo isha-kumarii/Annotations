@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "20220323101930_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Queue of vehicles stopped at traffic signal ahead causing ego to stop",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

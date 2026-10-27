@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-1017",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Ego vehicle stops behind leading car at a traffic light controlled intersection at night.",
+    "time_window": {
+      "start_sec": "00:13",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

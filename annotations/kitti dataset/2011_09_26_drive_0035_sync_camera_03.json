@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0035_sync_camera_03",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Parked vehicles constrict the travel lane while approaching a T-intersection.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

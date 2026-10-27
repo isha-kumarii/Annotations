@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "idd_primary_d2_part_13",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Bicyclist enters ego lane from right while a pedestrian crosses from the right sidewalk",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-1051",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "The ego vehicle follows a lead car on the road at night.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

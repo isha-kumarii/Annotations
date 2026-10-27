@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "video_id": "scene-1105",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1105.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop",
+      "speed limit"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives along a narrow urban road at night in rainy weather, passing parked cars along the roadside.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

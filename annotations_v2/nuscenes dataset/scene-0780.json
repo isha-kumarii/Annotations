@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0780",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-8/scene-0780.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle is stopped at a signalized intersection behind another vehicle while waiting for the traffic light to change.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_080939_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Multiple motorcycles and an auto-rickshaw occupy the ego path ahead while pedestrians and parked buses line the roadside.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bus",
+      "count": 2,
+      "relative_position": "right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 8,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

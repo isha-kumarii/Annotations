@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "20220323140934_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Multiple motorcycles and a right-side auto-rickshaw cut into/occupy the ego lane at the intersection",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 6,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "20220426172323_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Following motorcycles and encountering pedestrians and animals along the roadside in a semi-urban environment.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 5,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "animal",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

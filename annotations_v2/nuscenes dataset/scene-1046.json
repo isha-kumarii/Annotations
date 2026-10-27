@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-1046",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1046.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 3,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle is stopped in heavy traffic at a signalized urban intersection during nighttime and rainy conditions, following other stopped vehicles in the queue.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

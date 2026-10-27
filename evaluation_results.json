@@ -1,0 +1,5461 @@
+{
+  "overall": {
+    "gemini": {
+      "total_videos": 200,
+      "overall": {
+        "composite_score": 0.4593,
+        "categorical_accuracy": 0.6939,
+        "categorical_macro_f1": 0.5004,
+        "categorical_weighted_f1": 0.694,
+        "environment_accuracy": 0.832,
+        "environment_macro_f1": 0.6849,
+        "environment_weighted_f1": 0.8448,
+        "behavior_accuracy": 0.5212,
+        "behavior_macro_f1": 0.2699,
+        "behavior_weighted_f1": 0.5055
+      },
+      "fields": {
+        "environment.road_type": {
+          "accuracy": 0.77,
+          "macro_precision": 0.5965,
+          "macro_recall": 0.7299,
+          "macro_f1": 0.5844,
+          "weighted_precision": 0.9487,
+          "weighted_recall": 0.77,
+          "weighted_f1": 0.8392,
+          "per_class": {
+            "Highway": {
+              "tp": 9,
+              "fp": 16,
+              "fn": 2,
+              "support": 11,
+              "precision": 0.36,
+              "recall": 0.8182,
+              "f1": 0.5
+            },
+            "Rural": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "support": 6,
+              "precision": 1.0,
+              "recall": 0.8333,
+              "f1": 0.9091
+            },
+            "Semi-urban": {
+              "tp": 1,
+              "fp": 29,
+              "fn": 1,
+              "support": 2,
+              "precision": 0.0333,
+              "recall": 0.5,
+              "f1": 0.0625
+            },
+            "Urban": {
+              "tp": 139,
+              "fp": 1,
+              "fn": 42,
+              "support": 181,
+              "precision": 0.9929,
+              "recall": 0.768,
+              "f1": 0.866
+            }
+          }
+        },
+        "environment.intersection": {
+          "accuracy": 0.8,
+          "macro_precision": 0.7993,
+          "macro_recall": 0.8011,
+          "macro_f1": 0.7995,
+          "weighted_precision": 0.802,
+          "weighted_recall": 0.8,
+          "weighted_f1": 0.8003,
+          "per_class": {
+            "False": {
+              "tp": 75,
+              "fp": 23,
+              "fn": 17,
+              "support": 92,
+              "precision": 0.7653,
+              "recall": 0.8152,
+              "f1": 0.7895
+            },
+            "True": {
+              "tp": 85,
+              "fp": 17,
+              "fn": 23,
+              "support": 108,
+              "precision": 0.8333,
+              "recall": 0.787,
+              "f1": 0.8095
+            }
+          }
+        },
+        "environment.traffic_control": {
+          "accuracy": 0.765,
+          "macro_precision": 0.343,
+          "macro_recall": 0.5509,
+          "macro_f1": 0.3748,
+          "weighted_precision": 0.7128,
+          "weighted_recall": 0.765,
+          "weighted_f1": 0.7355,
+          "per_class": {
+            "None": {
+              "tp": 98,
+              "fp": 23,
+              "fn": 21,
+              "support": 119,
+              "precision": 0.8099,
+              "recall": 0.8235,
+              "f1": 0.8167
+            },
+            "Stop sign": {
+              "tp": 0,
+              "fp": 2,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Traffic signal": {
+              "tp": 54,
+              "fp": 14,
+              "fn": 4,
+              "support": 58,
+              "precision": 0.7941,
+              "recall": 0.931,
+              "f1": 0.8571
+            },
+            "Unknown": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 21,
+              "support": 21,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Yield": {
+              "tp": 1,
+              "fp": 8,
+              "fn": 0,
+              "support": 1,
+              "precision": 0.1111,
+              "recall": 1.0,
+              "f1": 0.2
+            }
+          }
+        },
+        "environment.weather": {
+          "accuracy": 0.855,
+          "macro_precision": 0.7694,
+          "macro_recall": 0.9272,
+          "macro_f1": 0.8142,
+          "weighted_precision": 0.925,
+          "weighted_recall": 0.855,
+          "weighted_f1": 0.8727,
+          "per_class": {
+            "Clear": {
+              "tp": 132,
+              "fp": 0,
+              "fn": 28,
+              "support": 160,
+              "precision": 1.0,
+              "recall": 0.825,
+              "f1": 0.9041
+            },
+            "Cloudy": {
+              "tp": 22,
+              "fp": 26,
+              "fn": 1,
+              "support": 23,
+              "precision": 0.4583,
+              "recall": 0.9565,
+              "f1": 0.6197
+            },
+            "Rain": {
+              "tp": 17,
+              "fp": 3,
+              "fn": 0,
+              "support": 17,
+              "precision": 0.85,
+              "recall": 1.0,
+              "f1": 0.9189
+            }
+          }
+        },
+        "environment.lighting": {
+          "accuracy": 0.97,
+          "macro_precision": 0.8,
+          "macro_recall": 0.9886,
+          "macro_f1": 0.8514,
+          "weighted_precision": 0.988,
+          "weighted_recall": 0.97,
+          "weighted_f1": 0.9762,
+          "per_class": {
+            "Dawn/Dusk": {
+              "tp": 4,
+              "fp": 6,
+              "fn": 0,
+              "support": 4,
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714
+            },
+            "Day": {
+              "tp": 170,
+              "fp": 0,
+              "fn": 6,
+              "support": 176,
+              "precision": 1.0,
+              "recall": 0.9659,
+              "f1": 0.9827
+            },
+            "Night": {
+              "tp": 20,
+              "fp": 0,
+              "fn": 0,
+              "support": 20,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          }
+        },
+        "scenario_behavior.event_type": {
+          "accuracy": 0.49,
+          "macro_precision": 0.366,
+          "macro_recall": 0.4765,
+          "macro_f1": 0.3461,
+          "weighted_precision": 0.6668,
+          "weighted_recall": 0.49,
+          "weighted_f1": 0.5307,
+          "per_class": {
+            "Animal & Pedestrian": {
+              "tp": 16,
+              "fp": 7,
+              "fn": 26,
+              "support": 42,
+              "precision": 0.6957,
+              "recall": 0.381,
+              "f1": 0.4923
+            },
+            "Obstacle Detection": {
+              "tp": 14,
+              "fp": 28,
+              "fn": 15,
+              "support": 29,
+              "precision": 0.3333,
+              "recall": 0.4828,
+              "f1": 0.3944
+            },
+            "Road & Environment": {
+              "tp": 2,
+              "fp": 10,
+              "fn": 1,
+              "support": 3,
+              "precision": 0.1667,
+              "recall": 0.6667,
+              "f1": 0.2667
+            },
+            "Sudden & Unexpected": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Traffic Control": {
+              "tp": 10,
+              "fp": 43,
+              "fn": 2,
+              "support": 12,
+              "precision": 0.1887,
+              "recall": 0.8333,
+              "f1": 0.3077
+            },
+            "Vehicle Interaction": {
+              "tp": 56,
+              "fp": 13,
+              "fn": 57,
+              "support": 113,
+              "precision": 0.8116,
+              "recall": 0.4956,
+              "f1": 0.6154
+            }
+          }
+        },
+        "scenario_behavior.event_pattern": {
+          "accuracy": 0.57,
+          "macro_precision": 0.3172,
+          "macro_recall": 0.3151,
+          "macro_f1": 0.2894,
+          "weighted_precision": 0.6383,
+          "weighted_recall": 0.57,
+          "weighted_f1": 0.5518,
+          "per_class": {
+            "Causal": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 6,
+              "support": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Co-linear": {
+              "tp": 67,
+              "fp": 71,
+              "fn": 12,
+              "support": 79,
+              "precision": 0.4855,
+              "recall": 0.8481,
+              "f1": 0.6175
+            },
+            "Cross-linear": {
+              "tp": 47,
+              "fp": 13,
+              "fn": 67,
+              "support": 114,
+              "precision": 0.7833,
+              "recall": 0.4123,
+              "f1": 0.5402
+            },
+            "Likelihood": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "scenario_behavior.severity": {
+          "accuracy": 0.5,
+          "macro_precision": 0.5324,
+          "macro_recall": 0.2977,
+          "macro_f1": 0.25,
+          "weighted_precision": 0.6035,
+          "weighted_recall": 0.5,
+          "weighted_f1": 0.4055,
+          "per_class": {
+            "High": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Low": {
+              "tp": 84,
+              "fp": 92,
+              "fn": 2,
+              "support": 86,
+              "precision": 0.4773,
+              "recall": 0.9767,
+              "f1": 0.6412
+            },
+            "Medium": {
+              "tp": 15,
+              "fp": 8,
+              "fn": 78,
+              "support": 93,
+              "precision": 0.6522,
+              "recall": 0.1613,
+              "f1": 0.2586
+            },
+            "Moderate": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 18,
+              "support": 19,
+              "precision": 1.0,
+              "recall": 0.0526,
+              "f1": 0.1
+            }
+          }
+        },
+        "scenario_behavior.ego_maneuver": {
+          "accuracy": 0.525,
+          "macro_precision": 0.212,
+          "macro_recall": 0.1929,
+          "macro_f1": 0.1942,
+          "weighted_precision": 0.5611,
+          "weighted_recall": 0.525,
+          "weighted_f1": 0.5339,
+          "per_class": {
+            "Emergency brake": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Follow": {
+              "tp": 13,
+              "fp": 31,
+              "fn": 13,
+              "support": 26,
+              "precision": 0.2955,
+              "recall": 0.5,
+              "f1": 0.3714
+            },
+            "Go straight": {
+              "tp": 72,
+              "fp": 37,
+              "fn": 41,
+              "support": 113,
+              "precision": 0.6606,
+              "recall": 0.6372,
+              "f1": 0.6486
+            },
+            "Lane change": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Left Turn": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "support": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Overtake": {
+              "tp": 0,
+              "fp": 5,
+              "fn": 0,
+              "support": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Right Turn": {
+              "tp": 0,
+              "fp": 7,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Stop": {
+              "tp": 18,
+              "fp": 9,
+              "fn": 20,
+              "support": 38,
+              "precision": 0.6667,
+              "recall": 0.4737,
+              "f1": 0.5538
+            },
+            "Yield": {
+              "tp": 2,
+              "fp": 5,
+              "fn": 14,
+              "support": 16,
+              "precision": 0.2857,
+              "recall": 0.125,
+              "f1": 0.1739
+            }
+          }
+        }
+      },
+      "actors": {
+        "class_macro_precision": 0.408,
+        "class_macro_recall": 0.3669,
+        "class_macro_f1": 0.376,
+        "positional_precision": 0.604,
+        "positional_recall": 0.3813,
+        "positional_f1": 0.4675,
+        "per_class": {
+          "ambulance": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "animal": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "support": 2,
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "auto_rickshaw": {
+            "tp": 37,
+            "fp": 15,
+            "fn": 7,
+            "support": 44,
+            "precision": 0.7115,
+            "recall": 0.8409,
+            "f1": 0.7708
+          },
+          "barrier": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "support": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "bicycle": {
+            "tp": 11,
+            "fp": 1,
+            "fn": 8,
+            "support": 19,
+            "precision": 0.9167,
+            "recall": 0.5789,
+            "f1": 0.7097
+          },
+          "bollard": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "bus": {
+            "tp": 24,
+            "fp": 7,
+            "fn": 12,
+            "support": 36,
+            "precision": 0.7742,
+            "recall": 0.6667,
+            "f1": 0.7164
+          },
+          "car": {
+            "tp": 156,
+            "fp": 4,
+            "fn": 24,
+            "support": 180,
+            "precision": 0.975,
+            "recall": 0.8667,
+            "f1": 0.9176
+          },
+          "cart": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "cone": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "support": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "motorcycle": {
+            "tp": 67,
+            "fp": 6,
+            "fn": 16,
+            "support": 83,
+            "precision": 0.9178,
+            "recall": 0.8072,
+            "f1": 0.859
+          },
+          "obstacle": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "pedestrian": {
+            "tp": 60,
+            "fp": 9,
+            "fn": 24,
+            "support": 84,
+            "precision": 0.8696,
+            "recall": 0.7143,
+            "f1": 0.7843
+          },
+          "pole": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "post": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "trailer": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "tram": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "support": 1,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "trash_bin": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "truck": {
+            "tp": 58,
+            "fp": 12,
+            "fn": 18,
+            "support": 76,
+            "precision": 0.8286,
+            "recall": 0.7632,
+            "f1": 0.7945
+          },
+          "van": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 18,
+            "support": 20,
+            "precision": 0.5,
+            "recall": 0.1,
+            "f1": 0.1667
+          }
+        }
+      },
+      "temporal": {
+        "mean_tiou": 0.2733,
+        "precision_at_05": 0.19,
+        "precision_at_02": 0.625
+      },
+      "key_event_nlp": {
+        "rouge_1_f1": 0.2148,
+        "rouge_2_f1": 0.0534,
+        "rouge_l_f1": 0.1779,
+        "jaccard_similarity": 0.1374
+      }
+    },
+    "qwen": {
+      "total_videos": 200,
+      "overall": {
+        "composite_score": 0.3541,
+        "categorical_accuracy": 0.6194,
+        "categorical_macro_f1": 0.3799,
+        "categorical_weighted_f1": 0.532,
+        "environment_accuracy": 0.81,
+        "environment_macro_f1": 0.5943,
+        "environment_weighted_f1": 0.7716,
+        "behavior_accuracy": 0.3812,
+        "behavior_macro_f1": 0.1119,
+        "behavior_weighted_f1": 0.2326
+      },
+      "fields": {
+        "environment.road_type": {
+          "accuracy": 0.855,
+          "macro_precision": 0.5147,
+          "macro_recall": 0.6084,
+          "macro_f1": 0.5317,
+          "weighted_precision": 0.9214,
+          "weighted_recall": 0.855,
+          "weighted_f1": 0.8792,
+          "per_class": {
+            "Highway": {
+              "tp": 8,
+              "fp": 24,
+              "fn": 3,
+              "support": 11,
+              "precision": 0.25,
+              "recall": 0.7273,
+              "f1": 0.3721
+            },
+            "Rural": {
+              "tp": 5,
+              "fp": 1,
+              "fn": 1,
+              "support": 6,
+              "precision": 0.8333,
+              "recall": 0.8333,
+              "f1": 0.8333
+            },
+            "Semi-urban": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Urban": {
+              "tp": 158,
+              "fp": 4,
+              "fn": 23,
+              "support": 181,
+              "precision": 0.9753,
+              "recall": 0.8729,
+              "f1": 0.9213
+            }
+          }
+        },
+        "environment.intersection": {
+          "accuracy": 0.465,
+          "macro_precision": 0.7312,
+          "macro_recall": 0.5046,
+          "macro_f1": 0.3253,
+          "weighted_precision": 0.7527,
+          "weighted_recall": 0.465,
+          "weighted_f1": 0.3008,
+          "per_class": {
+            "False": {
+              "tp": 92,
+              "fp": 107,
+              "fn": 0,
+              "support": 92,
+              "precision": 0.4623,
+              "recall": 1.0,
+              "f1": 0.6323
+            },
+            "True": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 107,
+              "support": 108,
+              "precision": 1.0,
+              "recall": 0.0093,
+              "f1": 0.0183
+            }
+          }
+        },
+        "environment.traffic_control": {
+          "accuracy": 0.79,
+          "macro_precision": 0.3258,
+          "macro_recall": 0.3451,
+          "macro_f1": 0.3329,
+          "weighted_precision": 0.7053,
+          "weighted_recall": 0.79,
+          "weighted_f1": 0.7409,
+          "per_class": {
+            "None": {
+              "tp": 113,
+              "fp": 35,
+              "fn": 6,
+              "support": 119,
+              "precision": 0.7635,
+              "recall": 0.9496,
+              "f1": 0.8464
+            },
+            "Stop sign": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Traffic signal": {
+              "tp": 45,
+              "fp": 7,
+              "fn": 13,
+              "support": 58,
+              "precision": 0.8654,
+              "recall": 0.7759,
+              "f1": 0.8182
+            },
+            "Unknown": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 21,
+              "support": 21,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Yield": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "environment.weather": {
+          "accuracy": 0.95,
+          "macro_precision": 0.9404,
+          "macro_recall": 0.8594,
+          "macro_f1": 0.8945,
+          "weighted_precision": 0.9504,
+          "weighted_recall": 0.95,
+          "weighted_f1": 0.9486,
+          "per_class": {
+            "Clear": {
+              "tp": 158,
+              "fp": 7,
+              "fn": 2,
+              "support": 160,
+              "precision": 0.9576,
+              "recall": 0.9875,
+              "f1": 0.9723
+            },
+            "Cloudy": {
+              "tp": 19,
+              "fp": 3,
+              "fn": 4,
+              "support": 23,
+              "precision": 0.8636,
+              "recall": 0.8261,
+              "f1": 0.8444
+            },
+            "Rain": {
+              "tp": 13,
+              "fp": 0,
+              "fn": 4,
+              "support": 17,
+              "precision": 1.0,
+              "recall": 0.7647,
+              "f1": 0.8667
+            }
+          }
+        },
+        "environment.lighting": {
+          "accuracy": 0.99,
+          "macro_precision": 0.9963,
+          "macro_recall": 0.8333,
+          "macro_f1": 0.887,
+          "weighted_precision": 0.9901,
+          "weighted_recall": 0.99,
+          "weighted_f1": 0.9884,
+          "per_class": {
+            "Dawn/Dusk": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 2,
+              "support": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6667
+            },
+            "Day": {
+              "tp": 176,
+              "fp": 2,
+              "fn": 0,
+              "support": 176,
+              "precision": 0.9888,
+              "recall": 1.0,
+              "f1": 0.9944
+            },
+            "Night": {
+              "tp": 20,
+              "fp": 0,
+              "fn": 0,
+              "support": 20,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          }
+        },
+        "scenario_behavior.event_type": {
+          "accuracy": 0.565,
+          "macro_precision": 0.0942,
+          "macro_recall": 0.1667,
+          "macro_f1": 0.1203,
+          "weighted_precision": 0.3192,
+          "weighted_recall": 0.565,
+          "weighted_f1": 0.408,
+          "per_class": {
+            "Animal & Pedestrian": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 42,
+              "support": 42,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Obstacle Detection": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 29,
+              "support": 29,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Road & Environment": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "support": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Sudden & Unexpected": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Traffic Control": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 12,
+              "support": 12,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Vehicle Interaction": {
+              "tp": 113,
+              "fp": 87,
+              "fn": 0,
+              "support": 113,
+              "precision": 0.565,
+              "recall": 1.0,
+              "f1": 0.722
+            }
+          }
+        },
+        "scenario_behavior.event_pattern": {
+          "accuracy": 0.395,
+          "macro_precision": 0.0988,
+          "macro_recall": 0.25,
+          "macro_f1": 0.1416,
+          "weighted_precision": 0.156,
+          "weighted_recall": 0.395,
+          "weighted_f1": 0.2237,
+          "per_class": {
+            "Causal": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "support": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Co-linear": {
+              "tp": 79,
+              "fp": 121,
+              "fn": 0,
+              "support": 79,
+              "precision": 0.395,
+              "recall": 1.0,
+              "f1": 0.5663
+            },
+            "Cross-linear": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 114,
+              "support": 114,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Likelihood": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "scenario_behavior.severity": {
+          "accuracy": 0.43,
+          "macro_precision": 0.1075,
+          "macro_recall": 0.25,
+          "macro_f1": 0.1503,
+          "weighted_precision": 0.1849,
+          "weighted_recall": 0.43,
+          "weighted_f1": 0.2586,
+          "per_class": {
+            "High": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Low": {
+              "tp": 86,
+              "fp": 114,
+              "fn": 0,
+              "support": 86,
+              "precision": 0.43,
+              "recall": 1.0,
+              "f1": 0.6014
+            },
+            "Medium": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 93,
+              "support": 93,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Moderate": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 19,
+              "support": 19,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "scenario_behavior.ego_maneuver": {
+          "accuracy": 0.135,
+          "macro_precision": 0.1615,
+          "macro_recall": 0.1441,
+          "macro_f1": 0.0355,
+          "weighted_precision": 0.582,
+          "weighted_recall": 0.135,
+          "weighted_f1": 0.04,
+          "per_class": {
+            "Emergency brake": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Follow": {
+              "tp": 26,
+              "fp": 173,
+              "fn": 0,
+              "support": 26,
+              "precision": 0.1307,
+              "recall": 1.0,
+              "f1": 0.2311
+            },
+            "Go straight": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 112,
+              "support": 113,
+              "precision": 1.0,
+              "recall": 0.0088,
+              "f1": 0.0175
+            },
+            "Lane change": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Right Turn": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Stop": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 38,
+              "support": 38,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Yield": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 16,
+              "support": 16,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        }
+      },
+      "actors": {
+        "class_macro_precision": 0.3007,
+        "class_macro_recall": 0.1143,
+        "class_macro_f1": 0.1434,
+        "positional_precision": 0.4344,
+        "positional_recall": 0.1755,
+        "positional_f1": 0.25,
+        "per_class": {
+          "ambulance": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "animal": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "support": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "auto_rickshaw": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 42,
+            "support": 44,
+            "precision": 1.0,
+            "recall": 0.0455,
+            "f1": 0.087
+          },
+          "barrier": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 5,
+            "support": 6,
+            "precision": 0.3333,
+            "recall": 0.1667,
+            "f1": 0.2222
+          },
+          "bicycle": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 17,
+            "support": 19,
+            "precision": 1.0,
+            "recall": 0.1053,
+            "f1": 0.1905
+          },
+          "bollard": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "building": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "bus": {
+            "tp": 4,
+            "fp": 2,
+            "fn": 32,
+            "support": 36,
+            "precision": 0.6667,
+            "recall": 0.1111,
+            "f1": 0.1905
+          },
+          "car": {
+            "tp": 168,
+            "fp": 7,
+            "fn": 12,
+            "support": 180,
+            "precision": 0.96,
+            "recall": 0.9333,
+            "f1": 0.9465
+          },
+          "cart": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "cone": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "support": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "motorcycle": {
+            "tp": 33,
+            "fp": 2,
+            "fn": 50,
+            "support": 83,
+            "precision": 0.9429,
+            "recall": 0.3976,
+            "f1": 0.5593
+          },
+          "obstacle": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "pedestrian": {
+            "tp": 17,
+            "fp": 0,
+            "fn": 67,
+            "support": 84,
+            "precision": 1.0,
+            "recall": 0.2024,
+            "f1": 0.3366
+          },
+          "pole": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "post": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "trailer": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "tram": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "trash_bin": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "truck": {
+            "tp": 42,
+            "fp": 17,
+            "fn": 34,
+            "support": 76,
+            "precision": 0.7119,
+            "recall": 0.5526,
+            "f1": 0.6222
+          },
+          "tuk_tuk": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "van": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 20,
+            "support": 20,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "temporal": {
+        "mean_tiou": 0.3155,
+        "precision_at_05": 0.46,
+        "precision_at_02": 0.745
+      },
+      "key_event_nlp": {
+        "rouge_1_f1": 0.2317,
+        "rouge_2_f1": 0.0473,
+        "rouge_l_f1": 0.1802,
+        "jaccard_similarity": 0.1483
+      }
+    }
+  },
+  "by_dataset": {
+    "dashcam": {
+      "gemini": {
+        "total_videos": 50,
+        "overall": {
+          "composite_score": 0.5022,
+          "categorical_accuracy": 0.68,
+          "categorical_macro_f1": 0.5308,
+          "categorical_weighted_f1": 0.6735,
+          "environment_accuracy": 0.752,
+          "environment_macro_f1": 0.6829,
+          "environment_weighted_f1": 0.7679,
+          "behavior_accuracy": 0.59,
+          "behavior_macro_f1": 0.3407,
+          "behavior_weighted_f1": 0.5556
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.54,
+            "macro_precision": 0.4211,
+            "macro_recall": 0.4086,
+            "macro_f1": 0.3538,
+            "weighted_precision": 0.8968,
+            "weighted_recall": 0.54,
+            "weighted_f1": 0.636,
+            "per_class": {
+              "Highway": {
+                "tp": 5,
+                "fp": 14,
+                "fn": 2,
+                "support": 7,
+                "precision": 0.2632,
+                "recall": 0.7143,
+                "f1": 0.3846
+              },
+              "Semi-urban": {
+                "tp": 0,
+                "fp": 9,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Urban": {
+                "tp": 22,
+                "fp": 0,
+                "fn": 21,
+                "support": 43,
+                "precision": 1.0,
+                "recall": 0.5116,
+                "f1": 0.6769
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.8,
+            "macro_precision": 0.815,
+            "macro_recall": 0.7572,
+            "macro_f1": 0.7702,
+            "weighted_precision": 0.8075,
+            "weighted_recall": 0.8,
+            "weighted_f1": 0.7901,
+            "per_class": {
+              "False": {
+                "tp": 29,
+                "fp": 8,
+                "fn": 2,
+                "support": 31,
+                "precision": 0.7838,
+                "recall": 0.9355,
+                "f1": 0.8529
+              },
+              "True": {
+                "tp": 11,
+                "fp": 2,
+                "fn": 8,
+                "support": 19,
+                "precision": 0.8462,
+                "recall": 0.5789,
+                "f1": 0.6875
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.84,
+            "macro_precision": 0.5727,
+            "macro_recall": 0.6201,
+            "macro_f1": 0.5945,
+            "weighted_precision": 0.7405,
+            "weighted_recall": 0.84,
+            "weighted_f1": 0.7863,
+            "per_class": {
+              "None": {
+                "tp": 34,
+                "fp": 7,
+                "fn": 1,
+                "support": 35,
+                "precision": 0.8293,
+                "recall": 0.9714,
+                "f1": 0.8947
+              },
+              "Traffic signal": {
+                "tp": 8,
+                "fp": 1,
+                "fn": 1,
+                "support": 9,
+                "precision": 0.8889,
+                "recall": 0.8889,
+                "f1": 0.8889
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.58,
+            "macro_precision": 0.7586,
+            "macro_recall": 0.8293,
+            "macro_f1": 0.6961,
+            "weighted_precision": 0.8841,
+            "weighted_recall": 0.58,
+            "weighted_f1": 0.6269,
+            "per_class": {
+              "Clear": {
+                "tp": 20,
+                "fp": 0,
+                "fn": 21,
+                "support": 41,
+                "precision": 1.0,
+                "recall": 0.4878,
+                "f1": 0.6557
+              },
+              "Cloudy": {
+                "tp": 8,
+                "fp": 21,
+                "fn": 0,
+                "support": 8,
+                "precision": 0.2759,
+                "recall": 1.0,
+                "f1": 0.4324
+              },
+              "Rain": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 0,
+                "support": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 50,
+                "fp": 0,
+                "fn": 0,
+                "support": 50,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.68,
+            "macro_precision": 0.3778,
+            "macro_recall": 0.3607,
+            "macro_f1": 0.3301,
+            "weighted_precision": 0.7306,
+            "weighted_recall": 0.68,
+            "weighted_f1": 0.6643,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 3,
+                "fp": 1,
+                "fn": 10,
+                "support": 13,
+                "precision": 0.75,
+                "recall": 0.2308,
+                "f1": 0.3529
+              },
+              "Obstacle Detection": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Road & Environment": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 2,
+                "fp": 4,
+                "fn": 1,
+                "support": 3,
+                "precision": 0.3333,
+                "recall": 0.6667,
+                "f1": 0.4444
+              },
+              "Vehicle Interaction": {
+                "tp": 29,
+                "fp": 7,
+                "fn": 3,
+                "support": 32,
+                "precision": 0.8056,
+                "recall": 0.9062,
+                "f1": 0.8529
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.48,
+            "macro_precision": 0.3053,
+            "macro_recall": 0.2912,
+            "macro_f1": 0.2454,
+            "weighted_precision": 0.6156,
+            "weighted_recall": 0.48,
+            "weighted_f1": 0.4437,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 16,
+                "fp": 22,
+                "fn": 2,
+                "support": 18,
+                "precision": 0.4211,
+                "recall": 0.8889,
+                "f1": 0.5714
+              },
+              "Cross-linear": {
+                "tp": 8,
+                "fp": 2,
+                "fn": 21,
+                "support": 29,
+                "precision": 0.8,
+                "recall": 0.2759,
+                "f1": 0.4103
+              },
+              "Likelihood": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.62,
+            "macro_precision": 0.5417,
+            "macro_recall": 0.4167,
+            "macro_f1": 0.3897,
+            "weighted_precision": 0.455,
+            "weighted_recall": 0.62,
+            "weighted_f1": 0.4935,
+            "per_class": {
+              "Low": {
+                "tp": 30,
+                "fp": 18,
+                "fn": 0,
+                "support": 30,
+                "precision": 0.625,
+                "recall": 1.0,
+                "f1": 0.7692
+              },
+              "Medium": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 16,
+                "support": 16,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Moderate": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 3,
+                "support": 4,
+                "precision": 1.0,
+                "recall": 0.25,
+                "f1": 0.4
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.58,
+            "macro_precision": 0.4306,
+            "macro_recall": 0.4256,
+            "macro_f1": 0.3975,
+            "weighted_precision": 0.7171,
+            "weighted_recall": 0.58,
+            "weighted_f1": 0.6208,
+            "per_class": {
+              "Follow": {
+                "tp": 4,
+                "fp": 7,
+                "fn": 6,
+                "support": 10,
+                "precision": 0.3636,
+                "recall": 0.4,
+                "f1": 0.381
+              },
+              "Go straight": {
+                "tp": 18,
+                "fp": 7,
+                "fn": 8,
+                "support": 26,
+                "precision": 0.72,
+                "recall": 0.6923,
+                "f1": 0.7059
+              },
+              "Left Turn": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Overtake": {
+                "tp": 0,
+                "fp": 5,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 7,
+                "support": 13,
+                "precision": 1.0,
+                "recall": 0.4615,
+                "f1": 0.6316
+              },
+              "Yield": {
+                "tp": 1,
+                "fp": 1,
+                "fn": 0,
+                "support": 1,
+                "precision": 0.5,
+                "recall": 1.0,
+                "f1": 0.6667
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.6863,
+          "class_macro_recall": 0.4852,
+          "class_macro_f1": 0.5387,
+          "positional_precision": 0.5833,
+          "positional_recall": 0.3684,
+          "positional_f1": 0.4516,
+          "per_class": {
+            "auto_rickshaw": {
+              "tp": 11,
+              "fp": 5,
+              "fn": 4,
+              "support": 15,
+              "precision": 0.6875,
+              "recall": 0.7333,
+              "f1": 0.7097
+            },
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bus": {
+              "tp": 7,
+              "fp": 3,
+              "fn": 5,
+              "support": 12,
+              "precision": 0.7,
+              "recall": 0.5833,
+              "f1": 0.6364
+            },
+            "car": {
+              "tp": 39,
+              "fp": 0,
+              "fn": 6,
+              "support": 45,
+              "precision": 1.0,
+              "recall": 0.8667,
+              "f1": 0.9286
+            },
+            "motorcycle": {
+              "tp": 27,
+              "fp": 3,
+              "fn": 6,
+              "support": 33,
+              "precision": 0.9,
+              "recall": 0.8182,
+              "f1": 0.8571
+            },
+            "pedestrian": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 8,
+              "support": 20,
+              "precision": 1.0,
+              "recall": 0.6,
+              "f1": 0.75
+            },
+            "truck": {
+              "tp": 16,
+              "fp": 2,
+              "fn": 9,
+              "support": 25,
+              "precision": 0.8889,
+              "recall": 0.64,
+              "f1": 0.7442
+            },
+            "van": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 7,
+              "support": 8,
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1": 0.2222
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.2551,
+          "precision_at_05": 0.18,
+          "precision_at_02": 0.6
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.2621,
+          "rouge_2_f1": 0.0797,
+          "rouge_l_f1": 0.2063,
+          "jaccard_similarity": 0.1745
+        }
+      },
+      "qwen": {
+        "total_videos": 50,
+        "overall": {
+          "composite_score": 0.4106,
+          "categorical_accuracy": 0.6356,
+          "categorical_macro_f1": 0.4219,
+          "categorical_weighted_f1": 0.556,
+          "environment_accuracy": 0.784,
+          "environment_macro_f1": 0.6185,
+          "environment_weighted_f1": 0.7594,
+          "behavior_accuracy": 0.45,
+          "behavior_macro_f1": 0.1762,
+          "behavior_weighted_f1": 0.3017
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.54,
+            "macro_precision": 0.6167,
+            "macro_recall": 0.7326,
+            "macro_f1": 0.5066,
+            "weighted_precision": 0.8927,
+            "weighted_recall": 0.54,
+            "weighted_f1": 0.599,
+            "per_class": {
+              "Highway": {
+                "tp": 7,
+                "fp": 23,
+                "fn": 0,
+                "support": 7,
+                "precision": 0.2333,
+                "recall": 1.0,
+                "f1": 0.3784
+              },
+              "Urban": {
+                "tp": 20,
+                "fp": 0,
+                "fn": 23,
+                "support": 43,
+                "precision": 1.0,
+                "recall": 0.4651,
+                "f1": 0.6349
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.64,
+            "macro_precision": 0.8163,
+            "macro_recall": 0.5263,
+            "macro_f1": 0.4375,
+            "weighted_precision": 0.7722,
+            "weighted_recall": 0.64,
+            "weighted_f1": 0.5185,
+            "per_class": {
+              "False": {
+                "tp": 31,
+                "fp": 18,
+                "fn": 0,
+                "support": 31,
+                "precision": 0.6327,
+                "recall": 1.0,
+                "f1": 0.775
+              },
+              "True": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 18,
+                "support": 19,
+                "precision": 1.0,
+                "recall": 0.0526,
+                "f1": 0.1
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.8,
+            "macro_precision": 0.5276,
+            "macro_recall": 0.5735,
+            "macro_f1": 0.5487,
+            "weighted_precision": 0.7034,
+            "weighted_recall": 0.8,
+            "weighted_f1": 0.7479,
+            "per_class": {
+              "None": {
+                "tp": 33,
+                "fp": 8,
+                "fn": 2,
+                "support": 35,
+                "precision": 0.8049,
+                "recall": 0.9429,
+                "f1": 0.8684
+              },
+              "Traffic signal": {
+                "tp": 7,
+                "fp": 2,
+                "fn": 2,
+                "support": 9,
+                "precision": 0.7778,
+                "recall": 0.7778,
+                "f1": 0.7778
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.94,
+            "macro_precision": 0.5845,
+            "macro_recall": 0.6169,
+            "macro_f1": 0.5997,
+            "weighted_precision": 0.9244,
+            "weighted_recall": 0.94,
+            "weighted_f1": 0.9318,
+            "per_class": {
+              "Clear": {
+                "tp": 40,
+                "fp": 1,
+                "fn": 1,
+                "support": 41,
+                "precision": 0.9756,
+                "recall": 0.9756,
+                "f1": 0.9756
+              },
+              "Cloudy": {
+                "tp": 7,
+                "fp": 2,
+                "fn": 1,
+                "support": 8,
+                "precision": 0.7778,
+                "recall": 0.875,
+                "f1": 0.8235
+              },
+              "Rain": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 50,
+                "fp": 0,
+                "fn": 0,
+                "support": 50,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.64,
+            "macro_precision": 0.16,
+            "macro_recall": 0.25,
+            "macro_f1": 0.1951,
+            "weighted_precision": 0.4096,
+            "weighted_recall": 0.64,
+            "weighted_f1": 0.4995,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 13,
+                "support": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Obstacle Detection": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Vehicle Interaction": {
+                "tp": 32,
+                "fp": 18,
+                "fn": 0,
+                "support": 32,
+                "precision": 0.64,
+                "recall": 1.0,
+                "f1": 0.7805
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.36,
+            "macro_precision": 0.12,
+            "macro_recall": 0.3333,
+            "macro_f1": 0.1765,
+            "weighted_precision": 0.1296,
+            "weighted_recall": 0.36,
+            "weighted_f1": 0.1906,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 18,
+                "fp": 32,
+                "fn": 0,
+                "support": 18,
+                "precision": 0.36,
+                "recall": 1.0,
+                "f1": 0.5294
+              },
+              "Cross-linear": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 29,
+                "support": 29,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.6,
+            "macro_precision": 0.2,
+            "macro_recall": 0.3333,
+            "macro_f1": 0.25,
+            "weighted_precision": 0.36,
+            "weighted_recall": 0.6,
+            "weighted_f1": 0.45,
+            "per_class": {
+              "Low": {
+                "tp": 30,
+                "fp": 20,
+                "fn": 0,
+                "support": 30,
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.75
+              },
+              "Medium": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 16,
+                "support": 16,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 4,
+                "support": 4,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.2,
+            "macro_precision": 0.05,
+            "macro_recall": 0.25,
+            "macro_f1": 0.0833,
+            "weighted_precision": 0.04,
+            "weighted_recall": 0.2,
+            "weighted_f1": 0.0667,
+            "per_class": {
+              "Follow": {
+                "tp": 10,
+                "fp": 40,
+                "fn": 0,
+                "support": 10,
+                "precision": 0.2,
+                "recall": 1.0,
+                "f1": 0.3333
+              },
+              "Go straight": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 26,
+                "support": 26,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 13,
+                "support": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.4809,
+          "class_macro_recall": 0.2796,
+          "class_macro_f1": 0.2967,
+          "positional_precision": 0.3796,
+          "positional_recall": 0.1962,
+          "positional_f1": 0.2587,
+          "per_class": {
+            "auto_rickshaw": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 13,
+              "support": 15,
+              "precision": 1.0,
+              "recall": 0.1333,
+              "f1": 0.2353
+            },
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bus": {
+              "tp": 0,
+              "fp": 2,
+              "fn": 12,
+              "support": 12,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "car": {
+              "tp": 45,
+              "fp": 5,
+              "fn": 0,
+              "support": 45,
+              "precision": 0.9,
+              "recall": 1.0,
+              "f1": 0.9474
+            },
+            "motorcycle": {
+              "tp": 10,
+              "fp": 2,
+              "fn": 23,
+              "support": 33,
+              "precision": 0.8333,
+              "recall": 0.303,
+              "f1": 0.4444
+            },
+            "pedestrian": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 16,
+              "support": 20,
+              "precision": 1.0,
+              "recall": 0.2,
+              "f1": 0.3333
+            },
+            "truck": {
+              "tp": 22,
+              "fp": 15,
+              "fn": 3,
+              "support": 25,
+              "precision": 0.5946,
+              "recall": 0.88,
+              "f1": 0.7097
+            },
+            "van": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 8,
+              "support": 8,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.318,
+          "precision_at_05": 0.5,
+          "precision_at_02": 0.74
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.3215,
+          "rouge_2_f1": 0.0801,
+          "rouge_l_f1": 0.2358,
+          "jaccard_similarity": 0.2205
+        }
+      }
+    },
+    "kitti dataset": {
+      "gemini": {
+        "total_videos": 40,
+        "overall": {
+          "composite_score": 0.5496,
+          "categorical_accuracy": 0.7444,
+          "categorical_macro_f1": 0.6326,
+          "categorical_weighted_f1": 0.7466,
+          "environment_accuracy": 0.875,
+          "environment_macro_f1": 0.8311,
+          "environment_weighted_f1": 0.895,
+          "behavior_accuracy": 0.5813,
+          "behavior_macro_f1": 0.3845,
+          "behavior_weighted_f1": 0.5612
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.8,
+            "macro_precision": 0.7414,
+            "macro_recall": 0.7,
+            "macro_f1": 0.7188,
+            "weighted_precision": 0.9448,
+            "weighted_recall": 0.8,
+            "weighted_f1": 0.8656,
+            "per_class": {
+              "Highway": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 0,
+                "support": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Rural": {
+                "tp": 3,
+                "fp": 0,
+                "fn": 0,
+                "support": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Semi-urban": {
+                "tp": 0,
+                "fp": 7,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Urban": {
+                "tp": 28,
+                "fp": 1,
+                "fn": 7,
+                "support": 35,
+                "precision": 0.9655,
+                "recall": 0.8,
+                "f1": 0.875
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.75,
+            "macro_precision": 0.7812,
+            "macro_recall": 0.7812,
+            "macro_f1": 0.75,
+            "weighted_precision": 0.8125,
+            "weighted_recall": 0.75,
+            "weighted_f1": 0.75,
+            "per_class": {
+              "False": {
+                "tp": 15,
+                "fp": 1,
+                "fn": 9,
+                "support": 24,
+                "precision": 0.9375,
+                "recall": 0.625,
+                "f1": 0.75
+              },
+              "True": {
+                "tp": 15,
+                "fp": 9,
+                "fn": 1,
+                "support": 16,
+                "precision": 0.625,
+                "recall": 0.9375,
+                "f1": 0.75
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.825,
+            "macro_precision": 0.6709,
+            "macro_recall": 0.9167,
+            "macro_f1": 0.6865,
+            "weighted_precision": 0.9369,
+            "weighted_recall": 0.825,
+            "weighted_f1": 0.8592,
+            "per_class": {
+              "None": {
+                "tp": 21,
+                "fp": 0,
+                "fn": 7,
+                "support": 28,
+                "precision": 1.0,
+                "recall": 0.75,
+                "f1": 0.8571
+              },
+              "Traffic signal": {
+                "tp": 11,
+                "fp": 2,
+                "fn": 0,
+                "support": 11,
+                "precision": 0.8462,
+                "recall": 1.0,
+                "f1": 0.9167
+              },
+              "Yield": {
+                "tp": 1,
+                "fp": 5,
+                "fn": 0,
+                "support": 1,
+                "precision": 0.1667,
+                "recall": 1.0,
+                "f1": 0.2857
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Clear": {
+                "tp": 40,
+                "fp": 0,
+                "fn": 0,
+                "support": 40,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 40,
+                "fp": 0,
+                "fn": 0,
+                "support": 40,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.55,
+            "macro_precision": 0.5597,
+            "macro_recall": 0.7093,
+            "macro_f1": 0.5276,
+            "weighted_precision": 0.73,
+            "weighted_recall": 0.55,
+            "weighted_f1": 0.5606,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 3,
+                "fp": 2,
+                "fn": 2,
+                "support": 5,
+                "precision": 0.6,
+                "recall": 0.6,
+                "f1": 0.6
+              },
+              "Obstacle Detection": {
+                "tp": 8,
+                "fp": 5,
+                "fn": 6,
+                "support": 14,
+                "precision": 0.6154,
+                "recall": 0.5714,
+                "f1": 0.5926
+              },
+              "Road & Environment": {
+                "tp": 1,
+                "fp": 3,
+                "fn": 0,
+                "support": 1,
+                "precision": 0.25,
+                "recall": 1.0,
+                "f1": 0.4
+              },
+              "Traffic Control": {
+                "tp": 4,
+                "fp": 8,
+                "fn": 0,
+                "support": 4,
+                "precision": 0.3333,
+                "recall": 1.0,
+                "f1": 0.5
+              },
+              "Vehicle Interaction": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 10,
+                "support": 16,
+                "precision": 1.0,
+                "recall": 0.375,
+                "f1": 0.5455
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.675,
+            "macro_precision": 0.4444,
+            "macro_recall": 0.4537,
+            "macro_f1": 0.4484,
+            "weighted_precision": 0.6552,
+            "weighted_recall": 0.675,
+            "weighted_f1": 0.6641,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 17,
+                "fp": 7,
+                "fn": 5,
+                "support": 22,
+                "precision": 0.7083,
+                "recall": 0.7727,
+                "f1": 0.7391
+              },
+              "Cross-linear": {
+                "tp": 10,
+                "fp": 6,
+                "fn": 7,
+                "support": 17,
+                "precision": 0.625,
+                "recall": 0.5882,
+                "f1": 0.6061
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.625,
+            "macro_precision": 0.3796,
+            "macro_recall": 0.3579,
+            "macro_f1": 0.3298,
+            "weighted_precision": 0.5618,
+            "weighted_recall": 0.625,
+            "weighted_f1": 0.5478,
+            "per_class": {
+              "Low": {
+                "tp": 23,
+                "fp": 13,
+                "fn": 2,
+                "support": 25,
+                "precision": 0.6389,
+                "recall": 0.92,
+                "f1": 0.7541
+              },
+              "Medium": {
+                "tp": 2,
+                "fp": 2,
+                "fn": 11,
+                "support": 13,
+                "precision": 0.5,
+                "recall": 0.1538,
+                "f1": 0.2353
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.475,
+            "macro_precision": 0.2276,
+            "macro_recall": 0.2526,
+            "macro_f1": 0.2322,
+            "weighted_precision": 0.475,
+            "weighted_recall": 0.475,
+            "weighted_f1": 0.4722,
+            "per_class": {
+              "Follow": {
+                "tp": 1,
+                "fp": 3,
+                "fn": 1,
+                "support": 2,
+                "precision": 0.25,
+                "recall": 0.5,
+                "f1": 0.3333
+              },
+              "Go straight": {
+                "tp": 16,
+                "fp": 10,
+                "fn": 10,
+                "support": 26,
+                "precision": 0.6154,
+                "recall": 0.6154,
+                "f1": 0.6154
+              },
+              "Lane change": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Right Turn": {
+                "tp": 0,
+                "fp": 4,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 2,
+                "fp": 2,
+                "fn": 3,
+                "support": 5,
+                "precision": 0.5,
+                "recall": 0.4,
+                "f1": 0.4444
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 2,
+                "fn": 4,
+                "support": 4,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.4626,
+          "class_macro_recall": 0.5066,
+          "class_macro_f1": 0.4659,
+          "positional_precision": 0.5584,
+          "positional_recall": 0.3707,
+          "positional_f1": 0.4456,
+          "per_class": {
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 3,
+              "support": 10,
+              "precision": 1.0,
+              "recall": 0.7,
+              "f1": 0.8235
+            },
+            "bollard": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bus": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "support": 1,
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6667
+            },
+            "car": {
+              "tp": 35,
+              "fp": 0,
+              "fn": 3,
+              "support": 38,
+              "precision": 1.0,
+              "recall": 0.9211,
+              "f1": 0.9589
+            },
+            "cone": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "support": 1,
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6667
+            },
+            "pedestrian": {
+              "tp": 8,
+              "fp": 1,
+              "fn": 0,
+              "support": 8,
+              "precision": 0.8889,
+              "recall": 1.0,
+              "f1": 0.9412
+            },
+            "trailer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "tram": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "support": 1,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "trash_bin": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "truck": {
+              "tp": 5,
+              "fp": 3,
+              "fn": 2,
+              "support": 7,
+              "precision": 0.625,
+              "recall": 0.7143,
+              "f1": 0.6667
+            },
+            "van": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "support": 4,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.3736,
+          "precision_at_05": 0.35,
+          "precision_at_02": 0.725
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.2064,
+          "rouge_2_f1": 0.039,
+          "rouge_l_f1": 0.1709,
+          "jaccard_similarity": 0.1283
+        }
+      },
+      "qwen": {
+        "total_videos": 40,
+        "overall": {
+          "composite_score": 0.4482,
+          "categorical_accuracy": 0.6722,
+          "categorical_macro_f1": 0.4742,
+          "categorical_weighted_f1": 0.5955,
+          "environment_accuracy": 0.88,
+          "environment_macro_f1": 0.7252,
+          "environment_weighted_f1": 0.8414,
+          "behavior_accuracy": 0.4125,
+          "behavior_macro_f1": 0.1604,
+          "behavior_weighted_f1": 0.2882
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.975,
+            "macro_precision": 0.7431,
+            "macro_recall": 0.75,
+            "macro_f1": 0.7465,
+            "weighted_precision": 0.9507,
+            "weighted_recall": 0.975,
+            "weighted_f1": 0.9627,
+            "per_class": {
+              "Highway": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 0,
+                "support": 1,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Rural": {
+                "tp": 3,
+                "fp": 0,
+                "fn": 0,
+                "support": 3,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Semi-urban": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Urban": {
+                "tp": 35,
+                "fp": 1,
+                "fn": 0,
+                "support": 35,
+                "precision": 0.9722,
+                "recall": 1.0,
+                "f1": 0.9859
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.6,
+            "macro_precision": 0.3,
+            "macro_recall": 0.5,
+            "macro_f1": 0.375,
+            "weighted_precision": 0.36,
+            "weighted_recall": 0.6,
+            "weighted_f1": 0.45,
+            "per_class": {
+              "False": {
+                "tp": 24,
+                "fp": 16,
+                "fn": 0,
+                "support": 24,
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.75
+              },
+              "True": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 16,
+                "support": 16,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.825,
+            "macro_precision": 0.6,
+            "macro_recall": 0.4848,
+            "macro_f1": 0.5046,
+            "weighted_precision": 0.835,
+            "weighted_recall": 0.825,
+            "weighted_f1": 0.7941,
+            "per_class": {
+              "None": {
+                "tp": 28,
+                "fp": 7,
+                "fn": 0,
+                "support": 28,
+                "precision": 0.8,
+                "recall": 1.0,
+                "f1": 0.8889
+              },
+              "Traffic signal": {
+                "tp": 5,
+                "fp": 0,
+                "fn": 6,
+                "support": 11,
+                "precision": 1.0,
+                "recall": 0.4545,
+                "f1": 0.625
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Clear": {
+                "tp": 40,
+                "fp": 0,
+                "fn": 0,
+                "support": 40,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 40,
+                "fp": 0,
+                "fn": 0,
+                "support": 40,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.4,
+            "macro_precision": 0.08,
+            "macro_recall": 0.2,
+            "macro_f1": 0.1143,
+            "weighted_precision": 0.16,
+            "weighted_recall": 0.4,
+            "weighted_f1": 0.2286,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 5,
+                "support": 5,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Obstacle Detection": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 14,
+                "support": 14,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Road & Environment": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 4,
+                "support": 4,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Vehicle Interaction": {
+                "tp": 16,
+                "fp": 24,
+                "fn": 0,
+                "support": 16,
+                "precision": 0.4,
+                "recall": 1.0,
+                "f1": 0.5714
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.55,
+            "macro_precision": 0.1833,
+            "macro_recall": 0.3333,
+            "macro_f1": 0.2366,
+            "weighted_precision": 0.3025,
+            "weighted_recall": 0.55,
+            "weighted_f1": 0.3903,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 22,
+                "fp": 18,
+                "fn": 0,
+                "support": 22,
+                "precision": 0.55,
+                "recall": 1.0,
+                "f1": 0.7097
+              },
+              "Cross-linear": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 17,
+                "support": 17,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.625,
+            "macro_precision": 0.2083,
+            "macro_recall": 0.3333,
+            "macro_f1": 0.2564,
+            "weighted_precision": 0.3906,
+            "weighted_recall": 0.625,
+            "weighted_f1": 0.4808,
+            "per_class": {
+              "Low": {
+                "tp": 25,
+                "fp": 15,
+                "fn": 0,
+                "support": 25,
+                "precision": 0.625,
+                "recall": 1.0,
+                "f1": 0.7692
+              },
+              "Medium": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 13,
+                "support": 13,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.075,
+            "macro_precision": 0.2103,
+            "macro_recall": 0.2077,
+            "macro_f1": 0.0343,
+            "weighted_precision": 0.6526,
+            "weighted_recall": 0.075,
+            "weighted_f1": 0.053,
+            "per_class": {
+              "Follow": {
+                "tp": 2,
+                "fp": 37,
+                "fn": 0,
+                "support": 2,
+                "precision": 0.0513,
+                "recall": 1.0,
+                "f1": 0.0976
+              },
+              "Go straight": {
+                "tp": 1,
+                "fp": 0,
+                "fn": 25,
+                "support": 26,
+                "precision": 1.0,
+                "recall": 0.0385,
+                "f1": 0.0741
+              },
+              "Lane change": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 5,
+                "support": 5,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 4,
+                "support": 4,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.5,
+          "class_macro_recall": 0.3794,
+          "class_macro_f1": 0.3862,
+          "positional_precision": 0.4909,
+          "positional_recall": 0.2328,
+          "positional_f1": 0.3158,
+          "per_class": {
+            "barrier": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 0,
+              "support": 1,
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6667
+            },
+            "bicycle": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 9,
+              "support": 10,
+              "precision": 1.0,
+              "recall": 0.1,
+              "f1": 0.1818
+            },
+            "bollard": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bus": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "support": 1,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "car": {
+              "tp": 35,
+              "fp": 0,
+              "fn": 3,
+              "support": 38,
+              "precision": 1.0,
+              "recall": 0.9211,
+              "f1": 0.9589
+            },
+            "cone": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "support": 1,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "pedestrian": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 3,
+              "support": 8,
+              "precision": 1.0,
+              "recall": 0.625,
+              "f1": 0.7692
+            },
+            "trailer": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "tram": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "trash_bin": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "truck": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 5,
+              "support": 7,
+              "precision": 1.0,
+              "recall": 0.2857,
+              "f1": 0.4444
+            },
+            "van": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.3125,
+          "precision_at_05": 0.45,
+          "precision_at_02": 0.775
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.1903,
+          "rouge_2_f1": 0.0303,
+          "rouge_l_f1": 0.1556,
+          "jaccard_similarity": 0.1165
+        }
+      }
+    },
+    "IDD": {
+      "gemini": {
+        "total_videos": 55,
+        "overall": {
+          "composite_score": 0.4572,
+          "categorical_accuracy": 0.6485,
+          "categorical_macro_f1": 0.4884,
+          "categorical_weighted_f1": 0.6572,
+          "environment_accuracy": 0.8146,
+          "environment_macro_f1": 0.6735,
+          "environment_weighted_f1": 0.8157,
+          "behavior_accuracy": 0.4409,
+          "behavior_macro_f1": 0.2569,
+          "behavior_weighted_f1": 0.4592
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.8364,
+            "macro_precision": 0.6813,
+            "macro_recall": 0.875,
+            "macro_f1": 0.6703,
+            "weighted_precision": 0.9623,
+            "weighted_recall": 0.8364,
+            "weighted_f1": 0.882,
+            "per_class": {
+              "Highway": {
+                "tp": 3,
+                "fp": 2,
+                "fn": 0,
+                "support": 3,
+                "precision": 0.6,
+                "recall": 1.0,
+                "f1": 0.75
+              },
+              "Rural": {
+                "tp": 2,
+                "fp": 0,
+                "fn": 1,
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              "Semi-urban": {
+                "tp": 1,
+                "fp": 7,
+                "fn": 0,
+                "support": 1,
+                "precision": 0.125,
+                "recall": 1.0,
+                "f1": 0.2222
+              },
+              "Urban": {
+                "tp": 40,
+                "fp": 0,
+                "fn": 8,
+                "support": 48,
+                "precision": 1.0,
+                "recall": 0.8333,
+                "f1": 0.9091
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.7455,
+            "macro_precision": 0.7467,
+            "macro_recall": 0.7507,
+            "macro_f1": 0.7447,
+            "weighted_precision": 0.7554,
+            "weighted_recall": 0.7455,
+            "weighted_f1": 0.7465,
+            "per_class": {
+              "False": {
+                "tp": 19,
+                "fp": 9,
+                "fn": 5,
+                "support": 24,
+                "precision": 0.6786,
+                "recall": 0.7917,
+                "f1": 0.7308
+              },
+              "True": {
+                "tp": 22,
+                "fp": 5,
+                "fn": 9,
+                "support": 31,
+                "precision": 0.8148,
+                "recall": 0.7097,
+                "f1": 0.7586
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.6364,
+            "macro_precision": 0.41,
+            "macro_recall": 0.5394,
+            "macro_f1": 0.4655,
+            "weighted_precision": 0.499,
+            "weighted_recall": 0.6364,
+            "weighted_f1": 0.559,
+            "per_class": {
+              "None": {
+                "tp": 27,
+                "fp": 14,
+                "fn": 6,
+                "support": 33,
+                "precision": 0.6585,
+                "recall": 0.8182,
+                "f1": 0.7297
+              },
+              "Traffic signal": {
+                "tp": 8,
+                "fp": 6,
+                "fn": 2,
+                "support": 10,
+                "precision": 0.5714,
+                "recall": 0.8,
+                "f1": 0.6667
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 12,
+                "support": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.9636,
+            "macro_precision": 0.6667,
+            "macro_recall": 0.6541,
+            "macro_f1": 0.6603,
+            "weighted_precision": 1.0,
+            "weighted_recall": 0.9636,
+            "weighted_f1": 0.9815,
+            "per_class": {
+              "Clear": {
+                "tp": 51,
+                "fp": 0,
+                "fn": 2,
+                "support": 53,
+                "precision": 1.0,
+                "recall": 0.9623,
+                "f1": 0.9808
+              },
+              "Cloudy": {
+                "tp": 0,
+                "fp": 2,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Rain": {
+                "tp": 2,
+                "fp": 0,
+                "fn": 0,
+                "support": 2,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 0.8909,
+            "macro_precision": 0.8,
+            "macro_recall": 0.9444,
+            "macro_f1": 0.8268,
+            "weighted_precision": 0.9564,
+            "weighted_recall": 0.8909,
+            "weighted_f1": 0.9093,
+            "per_class": {
+              "Dawn/Dusk": {
+                "tp": 4,
+                "fp": 6,
+                "fn": 0,
+                "support": 4,
+                "precision": 0.4,
+                "recall": 1.0,
+                "f1": 0.5714
+              },
+              "Day": {
+                "tp": 30,
+                "fp": 0,
+                "fn": 6,
+                "support": 36,
+                "precision": 1.0,
+                "recall": 0.8333,
+                "f1": 0.9091
+              },
+              "Night": {
+                "tp": 15,
+                "fp": 0,
+                "fn": 0,
+                "support": 15,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.4364,
+            "macro_precision": 0.3744,
+            "macro_recall": 0.2607,
+            "macro_f1": 0.2729,
+            "weighted_precision": 0.7006,
+            "weighted_recall": 0.4364,
+            "weighted_f1": 0.5089,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 10,
+                "support": 16,
+                "precision": 1.0,
+                "recall": 0.375,
+                "f1": 0.5455
+              },
+              "Obstacle Detection": {
+                "tp": 3,
+                "fp": 16,
+                "fn": 4,
+                "support": 7,
+                "precision": 0.1579,
+                "recall": 0.4286,
+                "f1": 0.2308
+              },
+              "Sudden & Unexpected": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 0,
+                "fp": 8,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Vehicle Interaction": {
+                "tp": 15,
+                "fp": 6,
+                "fn": 15,
+                "support": 30,
+                "precision": 0.7143,
+                "recall": 0.5,
+                "f1": 0.5882
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.5273,
+            "macro_precision": 0.3271,
+            "macro_recall": 0.3316,
+            "macro_f1": 0.2712,
+            "weighted_precision": 0.72,
+            "weighted_recall": 0.5273,
+            "weighted_f1": 0.5152,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 15,
+                "fp": 25,
+                "fn": 1,
+                "support": 16,
+                "precision": 0.375,
+                "recall": 0.9375,
+                "f1": 0.5357
+              },
+              "Cross-linear": {
+                "tp": 14,
+                "fp": 1,
+                "fn": 22,
+                "support": 36,
+                "precision": 0.9333,
+                "recall": 0.3889,
+                "f1": 0.549
+              },
+              "Likelihood": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.3091,
+            "macro_precision": 0.2213,
+            "macro_recall": 0.311,
+            "macro_f1": 0.1638,
+            "weighted_precision": 0.5542,
+            "weighted_recall": 0.3091,
+            "weighted_f1": 0.3082,
+            "per_class": {
+              "High": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Low": {
+                "tp": 7,
+                "fp": 34,
+                "fn": 0,
+                "support": 7,
+                "precision": 0.1707,
+                "recall": 1.0,
+                "f1": 0.2917
+              },
+              "Medium": {
+                "tp": 10,
+                "fp": 4,
+                "fn": 31,
+                "support": 41,
+                "precision": 0.7143,
+                "recall": 0.2439,
+                "f1": 0.3636
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.4909,
+            "macro_precision": 0.3981,
+            "macro_recall": 0.3395,
+            "macro_f1": 0.3198,
+            "weighted_precision": 0.604,
+            "weighted_recall": 0.4909,
+            "weighted_f1": 0.5045,
+            "per_class": {
+              "Follow": {
+                "tp": 5,
+                "fp": 19,
+                "fn": 2,
+                "support": 7,
+                "precision": 0.2083,
+                "recall": 0.7143,
+                "f1": 0.3226
+              },
+              "Go straight": {
+                "tp": 17,
+                "fp": 8,
+                "fn": 15,
+                "support": 32,
+                "precision": 0.68,
+                "recall": 0.5312,
+                "f1": 0.5965
+              },
+              "Lane change": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Right Turn": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 4,
+                "fp": 0,
+                "fn": 2,
+                "support": 6,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              "Yield": {
+                "tp": 1,
+                "fp": 1,
+                "fn": 7,
+                "support": 8,
+                "precision": 0.5,
+                "recall": 0.125,
+                "f1": 0.2
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.5042,
+          "class_macro_recall": 0.4352,
+          "class_macro_f1": 0.4608,
+          "positional_precision": 0.6171,
+          "positional_recall": 0.403,
+          "positional_f1": 0.4876,
+          "per_class": {
+            "ambulance": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "animal": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "support": 2,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "auto_rickshaw": {
+              "tp": 26,
+              "fp": 10,
+              "fn": 3,
+              "support": 29,
+              "precision": 0.7222,
+              "recall": 0.8966,
+              "f1": 0.8
+            },
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "support": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 2,
+              "support": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6667
+            },
+            "bus": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 5,
+              "support": 12,
+              "precision": 0.7778,
+              "recall": 0.5833,
+              "f1": 0.6667
+            },
+            "car": {
+              "tp": 34,
+              "fp": 3,
+              "fn": 10,
+              "support": 44,
+              "precision": 0.9189,
+              "recall": 0.7727,
+              "f1": 0.8395
+            },
+            "cart": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 39,
+              "fp": 1,
+              "fn": 7,
+              "support": 46,
+              "precision": 0.975,
+              "recall": 0.8478,
+              "f1": 0.907
+            },
+            "pedestrian": {
+              "tp": 22,
+              "fp": 4,
+              "fn": 9,
+              "support": 31,
+              "precision": 0.8462,
+              "recall": 0.7097,
+              "f1": 0.7719
+            },
+            "pole": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "post": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "truck": {
+              "tp": 18,
+              "fp": 4,
+              "fn": 5,
+              "support": 23,
+              "precision": 0.8182,
+              "recall": 0.7826,
+              "f1": 0.8
+            },
+            "van": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.2576,
+          "precision_at_05": 0.1455,
+          "precision_at_02": 0.6
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.1543,
+          "rouge_2_f1": 0.0332,
+          "rouge_l_f1": 0.1425,
+          "jaccard_similarity": 0.0957
+        }
+      },
+      "qwen": {
+        "total_videos": 55,
+        "overall": {
+          "composite_score": 0.3126,
+          "categorical_accuracy": 0.5576,
+          "categorical_macro_f1": 0.3068,
+          "categorical_weighted_f1": 0.4673,
+          "environment_accuracy": 0.7855,
+          "environment_macro_f1": 0.4827,
+          "environment_weighted_f1": 0.7265,
+          "behavior_accuracy": 0.2727,
+          "behavior_macro_f1": 0.087,
+          "behavior_weighted_f1": 0.1434
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.9091,
+            "macro_precision": 0.402,
+            "macro_recall": 0.4167,
+            "macro_f1": 0.4091,
+            "weighted_precision": 0.8578,
+            "weighted_recall": 0.9091,
+            "weighted_f1": 0.8826,
+            "per_class": {
+              "Highway": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Rural": {
+                "tp": 2,
+                "fp": 1,
+                "fn": 1,
+                "support": 3,
+                "precision": 0.6667,
+                "recall": 0.6667,
+                "f1": 0.6667
+              },
+              "Semi-urban": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Urban": {
+                "tp": 48,
+                "fp": 3,
+                "fn": 0,
+                "support": 48,
+                "precision": 0.9412,
+                "recall": 1.0,
+                "f1": 0.9697
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.4364,
+            "macro_precision": 0.2182,
+            "macro_recall": 0.5,
+            "macro_f1": 0.3038,
+            "weighted_precision": 0.1904,
+            "weighted_recall": 0.4364,
+            "weighted_f1": 0.2651,
+            "per_class": {
+              "False": {
+                "tp": 24,
+                "fp": 31,
+                "fn": 0,
+                "support": 24,
+                "precision": 0.4364,
+                "recall": 1.0,
+                "f1": 0.6076
+              },
+              "True": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 31,
+                "support": 31,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.6727,
+            "macro_precision": 0.447,
+            "macro_recall": 0.5596,
+            "macro_f1": 0.4968,
+            "weighted_precision": 0.5259,
+            "weighted_recall": 0.6727,
+            "weighted_f1": 0.5901,
+            "per_class": {
+              "None": {
+                "tp": 29,
+                "fp": 14,
+                "fn": 4,
+                "support": 33,
+                "precision": 0.6744,
+                "recall": 0.8788,
+                "f1": 0.7632
+              },
+              "Traffic signal": {
+                "tp": 8,
+                "fp": 4,
+                "fn": 2,
+                "support": 10,
+                "precision": 0.6667,
+                "recall": 0.8,
+                "f1": 0.7273
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 12,
+                "support": 12,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.9455,
+            "macro_precision": 0.321,
+            "macro_recall": 0.327,
+            "macro_f1": 0.324,
+            "weighted_precision": 0.9279,
+            "weighted_recall": 0.9455,
+            "weighted_f1": 0.9366,
+            "per_class": {
+              "Clear": {
+                "tp": 52,
+                "fp": 2,
+                "fn": 1,
+                "support": 53,
+                "precision": 0.963,
+                "recall": 0.9811,
+                "f1": 0.972
+              },
+              "Cloudy": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Rain": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 0.9636,
+            "macro_precision": 0.9825,
+            "macro_recall": 0.8333,
+            "macro_f1": 0.8799,
+            "weighted_precision": 0.9656,
+            "weighted_recall": 0.9636,
+            "weighted_f1": 0.9581,
+            "per_class": {
+              "Dawn/Dusk": {
+                "tp": 2,
+                "fp": 0,
+                "fn": 2,
+                "support": 4,
+                "precision": 1.0,
+                "recall": 0.5,
+                "f1": 0.6667
+              },
+              "Day": {
+                "tp": 36,
+                "fp": 2,
+                "fn": 0,
+                "support": 36,
+                "precision": 0.9474,
+                "recall": 1.0,
+                "f1": 0.973
+              },
+              "Night": {
+                "tp": 15,
+                "fp": 0,
+                "fn": 0,
+                "support": 15,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.5455,
+            "macro_precision": 0.1091,
+            "macro_recall": 0.2,
+            "macro_f1": 0.1412,
+            "weighted_precision": 0.2975,
+            "weighted_recall": 0.5455,
+            "weighted_f1": 0.385,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 16,
+                "support": 16,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Obstacle Detection": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 7,
+                "support": 7,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Sudden & Unexpected": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Vehicle Interaction": {
+                "tp": 30,
+                "fp": 25,
+                "fn": 0,
+                "support": 30,
+                "precision": 0.5455,
+                "recall": 1.0,
+                "f1": 0.7059
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.2909,
+            "macro_precision": 0.0727,
+            "macro_recall": 0.25,
+            "macro_f1": 0.1127,
+            "weighted_precision": 0.0846,
+            "weighted_recall": 0.2909,
+            "weighted_f1": 0.1311,
+            "per_class": {
+              "Causal": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Co-linear": {
+                "tp": 16,
+                "fp": 39,
+                "fn": 0,
+                "support": 16,
+                "precision": 0.2909,
+                "recall": 1.0,
+                "f1": 0.4507
+              },
+              "Cross-linear": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 36,
+                "support": 36,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Likelihood": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.1273,
+            "macro_precision": 0.0318,
+            "macro_recall": 0.25,
+            "macro_f1": 0.0565,
+            "weighted_precision": 0.0162,
+            "weighted_recall": 0.1273,
+            "weighted_f1": 0.0287,
+            "per_class": {
+              "High": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Low": {
+                "tp": 7,
+                "fp": 48,
+                "fn": 0,
+                "support": 7,
+                "precision": 0.1273,
+                "recall": 1.0,
+                "f1": 0.2258
+              },
+              "Medium": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 41,
+                "support": 41,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.1273,
+            "macro_precision": 0.0212,
+            "macro_recall": 0.1667,
+            "macro_f1": 0.0376,
+            "weighted_precision": 0.0162,
+            "weighted_recall": 0.1273,
+            "weighted_f1": 0.0287,
+            "per_class": {
+              "Follow": {
+                "tp": 7,
+                "fp": 48,
+                "fn": 0,
+                "support": 7,
+                "precision": 0.1273,
+                "recall": 1.0,
+                "f1": 0.2258
+              },
+              "Go straight": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 32,
+                "support": 32,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Lane change": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Right Turn": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 8,
+                "support": 8,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.3168,
+          "class_macro_recall": 0.1329,
+          "class_macro_f1": 0.1718,
+          "positional_precision": 0.475,
+          "positional_recall": 0.1418,
+          "positional_f1": 0.2184,
+          "per_class": {
+            "ambulance": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "animal": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "support": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "auto_rickshaw": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 29,
+              "support": 29,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "support": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 3,
+              "support": 4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1": 0.4
+            },
+            "bus": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 12,
+              "support": 12,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "car": {
+              "tp": 38,
+              "fp": 1,
+              "fn": 6,
+              "support": 44,
+              "precision": 0.9744,
+              "recall": 0.8636,
+              "f1": 0.9157
+            },
+            "cart": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 22,
+              "fp": 0,
+              "fn": 24,
+              "support": 46,
+              "precision": 1.0,
+              "recall": 0.4783,
+              "f1": 0.6471
+            },
+            "pedestrian": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 28,
+              "support": 31,
+              "precision": 1.0,
+              "recall": 0.0968,
+              "f1": 0.1765
+            },
+            "pole": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "post": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "truck": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 16,
+              "support": 23,
+              "precision": 0.7778,
+              "recall": 0.3043,
+              "f1": 0.4375
+            },
+            "tuk_tuk": {
+              "tp": 0,
+              "fp": 2,
+              "fn": 0,
+              "support": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "van": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.2818,
+          "precision_at_05": 0.3636,
+          "precision_at_02": 0.6909
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.1942,
+          "rouge_2_f1": 0.0338,
+          "rouge_l_f1": 0.1583,
+          "jaccard_similarity": 0.1178
+        }
+      }
+    },
+    "nuscenes dataset": {
+      "gemini": {
+        "total_videos": 55,
+        "overall": {
+          "composite_score": 0.4813,
+          "categorical_accuracy": 0.7152,
+          "categorical_macro_f1": 0.5566,
+          "categorical_weighted_f1": 0.707,
+          "environment_accuracy": 0.8909,
+          "environment_macro_f1": 0.7121,
+          "environment_weighted_f1": 0.9027,
+          "behavior_accuracy": 0.4955,
+          "behavior_macro_f1": 0.3624,
+          "behavior_weighted_f1": 0.4624
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 0.8909,
+            "macro_precision": 0.5,
+            "macro_recall": 0.4455,
+            "macro_f1": 0.4712,
+            "weighted_precision": 1.0,
+            "weighted_recall": 0.8909,
+            "weighted_f1": 0.9423,
+            "per_class": {
+              "Semi-urban": {
+                "tp": 0,
+                "fp": 6,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Urban": {
+                "tp": 49,
+                "fp": 0,
+                "fn": 6,
+                "support": 55,
+                "precision": 1.0,
+                "recall": 0.8909,
+                "f1": 0.9423
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.8909,
+            "macro_precision": 0.8398,
+            "macro_recall": 0.902,
+            "macro_f1": 0.8625,
+            "weighted_precision": 0.9104,
+            "weighted_recall": 0.8909,
+            "weighted_f1": 0.8955,
+            "per_class": {
+              "False": {
+                "tp": 12,
+                "fp": 5,
+                "fn": 1,
+                "support": 13,
+                "precision": 0.7059,
+                "recall": 0.9231,
+                "f1": 0.8
+              },
+              "True": {
+                "tp": 37,
+                "fp": 1,
+                "fn": 5,
+                "support": 42,
+                "precision": 0.9737,
+                "recall": 0.881,
+                "f1": 0.925
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.7818,
+            "macro_precision": 0.3465,
+            "macro_recall": 0.332,
+            "macro_f1": 0.3361,
+            "weighted_precision": 0.8013,
+            "weighted_recall": 0.7818,
+            "weighted_f1": 0.7846,
+            "per_class": {
+              "None": {
+                "tp": 16,
+                "fp": 2,
+                "fn": 7,
+                "support": 23,
+                "precision": 0.8889,
+                "recall": 0.6957,
+                "f1": 0.7805
+              },
+              "Stop sign": {
+                "tp": 0,
+                "fp": 2,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic signal": {
+                "tp": 27,
+                "fp": 5,
+                "fn": 1,
+                "support": 28,
+                "precision": 0.8438,
+                "recall": 0.9643,
+                "f1": 0.9
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 0,
+                "support": 0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.8909,
+            "macro_precision": 0.8824,
+            "macro_recall": 0.9137,
+            "macro_f1": 0.8906,
+            "weighted_precision": 0.907,
+            "weighted_recall": 0.8909,
+            "weighted_f1": 0.891,
+            "per_class": {
+              "Clear": {
+                "tp": 21,
+                "fp": 0,
+                "fn": 5,
+                "support": 26,
+                "precision": 1.0,
+                "recall": 0.8077,
+                "f1": 0.8936
+              },
+              "Cloudy": {
+                "tp": 14,
+                "fp": 3,
+                "fn": 1,
+                "support": 15,
+                "precision": 0.8235,
+                "recall": 0.9333,
+                "f1": 0.875
+              },
+              "Rain": {
+                "tp": 14,
+                "fp": 3,
+                "fn": 0,
+                "support": 14,
+                "precision": 0.8235,
+                "recall": 1.0,
+                "f1": 0.9032
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 50,
+                "fp": 0,
+                "fn": 0,
+                "support": 50,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Night": {
+                "tp": 5,
+                "fp": 0,
+                "fn": 0,
+                "support": 5,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.3273,
+            "macro_precision": 0.4363,
+            "macro_recall": 0.5343,
+            "macro_f1": 0.3473,
+            "weighted_precision": 0.7635,
+            "weighted_recall": 0.3273,
+            "weighted_f1": 0.3318,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 4,
+                "fp": 4,
+                "fn": 4,
+                "support": 8,
+                "precision": 0.5,
+                "recall": 0.5,
+                "f1": 0.5
+              },
+              "Obstacle Detection": {
+                "tp": 3,
+                "fp": 6,
+                "fn": 3,
+                "support": 6,
+                "precision": 0.3333,
+                "recall": 0.5,
+                "f1": 0.4
+              },
+              "Road & Environment": {
+                "tp": 1,
+                "fp": 4,
+                "fn": 1,
+                "support": 2,
+                "precision": 0.2,
+                "recall": 0.5,
+                "f1": 0.2857
+              },
+              "Traffic Control": {
+                "tp": 4,
+                "fp": 23,
+                "fn": 0,
+                "support": 4,
+                "precision": 0.1481,
+                "recall": 1.0,
+                "f1": 0.2581
+              },
+              "Vehicle Interaction": {
+                "tp": 6,
+                "fp": 0,
+                "fn": 29,
+                "support": 35,
+                "precision": 1.0,
+                "recall": 0.1714,
+                "f1": 0.2927
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.6182,
+            "macro_precision": 0.6586,
+            "macro_recall": 0.6474,
+            "macro_f1": 0.6162,
+            "weighted_precision": 0.68,
+            "weighted_recall": 0.6182,
+            "weighted_f1": 0.6116,
+            "per_class": {
+              "Co-linear": {
+                "tp": 19,
+                "fp": 17,
+                "fn": 4,
+                "support": 23,
+                "precision": 0.5278,
+                "recall": 0.8261,
+                "f1": 0.6441
+              },
+              "Cross-linear": {
+                "tp": 15,
+                "fp": 4,
+                "fn": 17,
+                "support": 32,
+                "precision": 0.7895,
+                "recall": 0.4688,
+                "f1": 0.5882
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.4909,
+            "macro_precision": 0.3051,
+            "macro_recall": 0.2826,
+            "macro_f1": 0.2156,
+            "weighted_precision": 0.519,
+            "weighted_recall": 0.4909,
+            "weighted_f1": 0.3722,
+            "per_class": {
+              "High": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Low": {
+                "tp": 24,
+                "fp": 27,
+                "fn": 0,
+                "support": 24,
+                "precision": 0.4706,
+                "recall": 1.0,
+                "f1": 0.64
+              },
+              "Medium": {
+                "tp": 3,
+                "fp": 1,
+                "fn": 20,
+                "support": 23,
+                "precision": 0.75,
+                "recall": 0.1304,
+                "f1": 0.2222
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 7,
+                "support": 7,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.5455,
+            "macro_precision": 0.283,
+            "macro_recall": 0.2635,
+            "macro_f1": 0.2703,
+            "weighted_precision": 0.5294,
+            "weighted_recall": 0.5455,
+            "weighted_f1": 0.534,
+            "per_class": {
+              "Emergency brake": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Follow": {
+                "tp": 3,
+                "fp": 2,
+                "fn": 4,
+                "support": 7,
+                "precision": 0.6,
+                "recall": 0.4286,
+                "f1": 0.5
+              },
+              "Go straight": {
+                "tp": 21,
+                "fp": 12,
+                "fn": 8,
+                "support": 29,
+                "precision": 0.6364,
+                "recall": 0.7241,
+                "f1": 0.6774
+              },
+              "Right Turn": {
+                "tp": 0,
+                "fp": 3,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 6,
+                "fp": 7,
+                "fn": 8,
+                "support": 14,
+                "precision": 0.4615,
+                "recall": 0.4286,
+                "f1": 0.4444
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 1,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.3844,
+          "class_macro_recall": 0.3499,
+          "class_macro_f1": 0.3654,
+          "positional_precision": 0.6379,
+          "positional_recall": 0.3719,
+          "positional_f1": 0.4698,
+          "per_class": {
+            "animal": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "support": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "barrier": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 2,
+              "support": 4,
+              "precision": 0.6667,
+              "recall": 0.5,
+              "f1": 0.5714
+            },
+            "bus": {
+              "tp": 9,
+              "fp": 1,
+              "fn": 2,
+              "support": 11,
+              "precision": 0.9,
+              "recall": 0.8182,
+              "f1": 0.8571
+            },
+            "car": {
+              "tp": 48,
+              "fp": 1,
+              "fn": 5,
+              "support": 53,
+              "precision": 0.9796,
+              "recall": 0.9057,
+              "f1": 0.9412
+            },
+            "cone": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 3,
+              "support": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "obstacle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "pedestrian": {
+              "tp": 18,
+              "fp": 4,
+              "fn": 7,
+              "support": 25,
+              "precision": 0.8182,
+              "recall": 0.72,
+              "f1": 0.766
+            },
+            "truck": {
+              "tp": 19,
+              "fp": 3,
+              "fn": 2,
+              "support": 21,
+              "precision": 0.8636,
+              "recall": 0.9048,
+              "f1": 0.8837
+            },
+            "van": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 7,
+              "support": 7,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.2326,
+          "precision_at_05": 0.1273,
+          "precision_at_02": 0.6
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.2383,
+          "rouge_2_f1": 0.0602,
+          "rouge_l_f1": 0.1927,
+          "jaccard_similarity": 0.1518
+        }
+      },
+      "qwen": {
+        "total_videos": 55,
+        "overall": {
+          "composite_score": 0.4085,
+          "categorical_accuracy": 0.6283,
+          "categorical_macro_f1": 0.4678,
+          "categorical_weighted_f1": 0.5437,
+          "environment_accuracy": 0.8073,
+          "environment_macro_f1": 0.7141,
+          "environment_weighted_f1": 0.7716,
+          "behavior_accuracy": 0.4046,
+          "behavior_macro_f1": 0.16,
+          "behavior_weighted_f1": 0.2588
+        },
+        "fields": {
+          "environment.road_type": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Urban": {
+                "tp": 55,
+                "fp": 0,
+                "fn": 0,
+                "support": 55,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "environment.intersection": {
+            "accuracy": 0.2364,
+            "macro_precision": 0.1182,
+            "macro_recall": 0.5,
+            "macro_f1": 0.1912,
+            "weighted_precision": 0.0559,
+            "weighted_recall": 0.2364,
+            "weighted_f1": 0.0904,
+            "per_class": {
+              "False": {
+                "tp": 13,
+                "fp": 42,
+                "fn": 0,
+                "support": 13,
+                "precision": 0.2364,
+                "recall": 1.0,
+                "f1": 0.3824
+              },
+              "True": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 42,
+                "support": 42,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.traffic_control": {
+            "accuracy": 0.8727,
+            "macro_precision": 0.4387,
+            "macro_recall": 0.4732,
+            "macro_f1": 0.4526,
+            "weighted_precision": 0.8212,
+            "weighted_recall": 0.8727,
+            "weighted_f1": 0.8413,
+            "per_class": {
+              "None": {
+                "tp": 23,
+                "fp": 6,
+                "fn": 0,
+                "support": 23,
+                "precision": 0.7931,
+                "recall": 1.0,
+                "f1": 0.8846
+              },
+              "Stop sign": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic signal": {
+                "tp": 25,
+                "fp": 1,
+                "fn": 3,
+                "support": 28,
+                "precision": 0.9615,
+                "recall": 0.8929,
+                "f1": 0.9259
+              },
+              "Unknown": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "environment.weather": {
+            "accuracy": 0.9273,
+            "macro_precision": 0.9556,
+            "macro_recall": 0.9095,
+            "macro_f1": 0.9268,
+            "weighted_precision": 0.937,
+            "weighted_recall": 0.9273,
+            "weighted_f1": 0.9265,
+            "per_class": {
+              "Clear": {
+                "tp": 26,
+                "fp": 4,
+                "fn": 0,
+                "support": 26,
+                "precision": 0.8667,
+                "recall": 1.0,
+                "f1": 0.9286
+              },
+              "Cloudy": {
+                "tp": 12,
+                "fp": 0,
+                "fn": 3,
+                "support": 15,
+                "precision": 1.0,
+                "recall": 0.8,
+                "f1": 0.8889
+              },
+              "Rain": {
+                "tp": 13,
+                "fp": 0,
+                "fn": 1,
+                "support": 14,
+                "precision": 1.0,
+                "recall": 0.9286,
+                "f1": 0.963
+              }
+            }
+          },
+          "environment.lighting": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "per_class": {
+              "Day": {
+                "tp": 50,
+                "fp": 0,
+                "fn": 0,
+                "support": 50,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "Night": {
+                "tp": 5,
+                "fp": 0,
+                "fn": 0,
+                "support": 5,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "scenario_behavior.event_type": {
+            "accuracy": 0.6364,
+            "macro_precision": 0.1273,
+            "macro_recall": 0.2,
+            "macro_f1": 0.1556,
+            "weighted_precision": 0.405,
+            "weighted_recall": 0.6364,
+            "weighted_f1": 0.4949,
+            "per_class": {
+              "Animal & Pedestrian": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 8,
+                "support": 8,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Obstacle Detection": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 6,
+                "support": 6,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Road & Environment": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "support": 2,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Traffic Control": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 4,
+                "support": 4,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Vehicle Interaction": {
+                "tp": 35,
+                "fp": 20,
+                "fn": 0,
+                "support": 35,
+                "precision": 0.6364,
+                "recall": 1.0,
+                "f1": 0.7778
+              }
+            }
+          },
+          "scenario_behavior.event_pattern": {
+            "accuracy": 0.4182,
+            "macro_precision": 0.2091,
+            "macro_recall": 0.5,
+            "macro_f1": 0.2949,
+            "weighted_precision": 0.1749,
+            "weighted_recall": 0.4182,
+            "weighted_f1": 0.2466,
+            "per_class": {
+              "Co-linear": {
+                "tp": 23,
+                "fp": 32,
+                "fn": 0,
+                "support": 23,
+                "precision": 0.4182,
+                "recall": 1.0,
+                "f1": 0.5897
+              },
+              "Cross-linear": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 32,
+                "support": 32,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.severity": {
+            "accuracy": 0.4364,
+            "macro_precision": 0.1091,
+            "macro_recall": 0.25,
+            "macro_f1": 0.1519,
+            "weighted_precision": 0.1904,
+            "weighted_recall": 0.4364,
+            "weighted_f1": 0.2651,
+            "per_class": {
+              "High": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Low": {
+                "tp": 24,
+                "fp": 31,
+                "fn": 0,
+                "support": 24,
+                "precision": 0.4364,
+                "recall": 1.0,
+                "f1": 0.6076
+              },
+              "Medium": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 23,
+                "support": 23,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Moderate": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 7,
+                "support": 7,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          },
+          "scenario_behavior.ego_maneuver": {
+            "accuracy": 0.1273,
+            "macro_precision": 0.0212,
+            "macro_recall": 0.1667,
+            "macro_f1": 0.0376,
+            "weighted_precision": 0.0162,
+            "weighted_recall": 0.1273,
+            "weighted_f1": 0.0287,
+            "per_class": {
+              "Emergency brake": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Follow": {
+                "tp": 7,
+                "fp": 48,
+                "fn": 0,
+                "support": 7,
+                "precision": 0.1273,
+                "recall": 1.0,
+                "f1": 0.2258
+              },
+              "Go straight": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 29,
+                "support": 29,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Right Turn": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "support": 1,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Stop": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 14,
+                "support": 14,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              },
+              "Yield": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 3,
+                "support": 3,
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0
+              }
+            }
+          }
+        },
+        "actors": {
+          "class_macro_precision": 0.3619,
+          "class_macro_recall": 0.1764,
+          "class_macro_f1": 0.2192,
+          "positional_precision": 0.4286,
+          "positional_recall": 0.1658,
+          "positional_f1": 0.2391,
+          "per_class": {
+            "barrier": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bicycle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "building": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "support": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "bus": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 8,
+              "support": 11,
+              "precision": 1.0,
+              "recall": 0.2727,
+              "f1": 0.4286
+            },
+            "car": {
+              "tp": 50,
+              "fp": 1,
+              "fn": 3,
+              "support": 53,
+              "precision": 0.9804,
+              "recall": 0.9434,
+              "f1": 0.9615
+            },
+            "cone": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "support": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "motorcycle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "support": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "obstacle": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "support": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "pedestrian": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 20,
+              "support": 25,
+              "precision": 1.0,
+              "recall": 0.2,
+              "f1": 0.3333
+            },
+            "truck": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 10,
+              "support": 21,
+              "precision": 1.0,
+              "recall": 0.5238,
+              "f1": 0.6875
+            },
+            "van": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 7,
+              "support": 7,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          }
+        },
+        "temporal": {
+          "mean_tiou": 0.3491,
+          "precision_at_05": 0.5273,
+          "precision_at_02": 0.7818
+        },
+        "key_event_nlp": {
+          "rouge_1_f1": 0.2177,
+          "rouge_2_f1": 0.0432,
+          "rouge_l_f1": 0.1693,
+          "jaccard_similarity": 0.1364
+        }
+      }
+    }
+  }
+}

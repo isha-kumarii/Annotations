@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "20220207145337_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "A red car drives past the ego vehicle on the left side.",
+    "time_window": {
+      "start_sec": "00:15",
+      "end_sec": "00:20"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

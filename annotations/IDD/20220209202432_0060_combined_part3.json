@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220209202432_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "Pedestrian walking across the road in front of the ego vehicle",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_right_and_front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right_and_front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

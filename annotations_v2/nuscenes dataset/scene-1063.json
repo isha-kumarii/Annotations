@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-1063",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1063.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [
+      "speed limit"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Moderate",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight along a dimly lit urban residential street at night, passing over speed bumps.",
+    "event_class": "Road and Environment",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220214204323_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "A motorcycle approaches from the front, and a pedestrian walks across the street.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0947",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0947.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [
+      "no entry"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "haze",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates through an urban corporate park area, passing by a standing pedestrian and curving along the roadway past parked vans.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

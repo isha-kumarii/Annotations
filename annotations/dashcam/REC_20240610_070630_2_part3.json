@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_070630_2_part3",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Moderate",
+    "ego_maneuver": "Stop",
+    "key_event": "Pedestrians crossing the road in front of the ego vehicle from left to right",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "ego_lane/front"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "front_left"
+    }
+  ]
+}

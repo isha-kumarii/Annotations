@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0086_sync_camera_03_part3",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Single car visible ahead in the ego lane",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:03"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

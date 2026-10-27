@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220426154958_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian crosses the road from the right between vehicles in front of ego",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    }
+  ]
+}

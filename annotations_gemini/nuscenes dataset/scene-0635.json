@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-0635",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Stop",
+    "key_event": "A large truck maneuvers across the roadway blocking the ego vehicle's path.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

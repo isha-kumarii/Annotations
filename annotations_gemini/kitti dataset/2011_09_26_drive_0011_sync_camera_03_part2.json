@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0011_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Approaching a controlled urban intersection with stationary and crossing traffic",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right"
+    }
+  ]
+}

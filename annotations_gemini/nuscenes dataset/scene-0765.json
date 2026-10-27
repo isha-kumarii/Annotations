@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0765",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Waiting at intersection for traffic signal change with cross traffic passing through",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:20"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

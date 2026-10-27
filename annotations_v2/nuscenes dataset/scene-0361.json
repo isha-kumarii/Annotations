@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0361",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-4/scene-0361.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight through a parking area and navigates around a curved internal road passing under a covered overhead structure.",
+    "event_class": "Road and Environment",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

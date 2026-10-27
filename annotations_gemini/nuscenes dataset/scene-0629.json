@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0629",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Stop sign",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Right Turn",
+    "key_event": "Truck crosses intersection from right during ego turn",
+    "time_window": {
+      "start_sec": "00:07",
+      "end_sec": "00:13"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

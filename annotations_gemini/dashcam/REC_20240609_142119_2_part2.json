@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_142119_2_part2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle navigates a curved roadway as an oncoming motorcycle passes in the opposing lane",
+    "time_window": {
+      "start_sec": "00:02",
+      "end_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

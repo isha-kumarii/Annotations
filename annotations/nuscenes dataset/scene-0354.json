@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0354",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian crossing the road ahead from left to right",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

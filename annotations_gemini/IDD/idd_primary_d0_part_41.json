@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "idd_primary_d0_part_41",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Vehicles and motorcycles crossing from side road/intersection",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 5,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0576",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-6/scene-0576.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "turn right"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "turn right"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road right to left"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle navigates an urban intersection in rainy weather, turning right while yielding to crossing pedestrians and encountering turning oncoming traffic.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_30_drive_0027_sync_camera_03_part1",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Moderate",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian steps from right sidewalk toward the road in front of ego vehicle",
+    "time_window": {
+      "end_sec": "00:20",
+      "start_sec": "00:15"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

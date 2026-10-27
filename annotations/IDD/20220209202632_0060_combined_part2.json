@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "video_id": "20220209202632_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "Pedestrians crossing between stopped/slow vehicles in front of the ego lane",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "ego_lane"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "crossing"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

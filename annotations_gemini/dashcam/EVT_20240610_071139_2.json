@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "EVT_20240610_071139_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "A silver car merges into the adjacent lane from the right",
+    "time_window": {
+      "start_sec": "00:11",
+      "end_sec": "00:15"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "video_id": "scene-0606",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/test/scene-0606.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    },
+    {
+      "actor_type": "bus",
+      "maneuver": "go straight"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle comes to a stop at a signalized intersection behind another vehicle while waiting for a red traffic light.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

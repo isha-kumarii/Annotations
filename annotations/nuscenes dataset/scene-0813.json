@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0813",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Stop",
+    "key_event": "Vehicle turning/crossing across ego lane from right while ego stopped at red light",
+    "time_window": {
+      "end_sec": "00:03",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "crossing"
+    }
+  ]
+}

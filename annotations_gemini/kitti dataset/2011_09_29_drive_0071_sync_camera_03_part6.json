@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_29_drive_0071_sync_camera_03_part6",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian crosses the street from right to left in front of ego vehicle",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:04"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

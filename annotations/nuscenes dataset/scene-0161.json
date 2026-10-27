@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "scene-0161",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "SUV (jeep) enters into ego path from the left",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:03"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}

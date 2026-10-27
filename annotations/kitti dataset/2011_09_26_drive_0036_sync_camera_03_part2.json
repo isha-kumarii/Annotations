@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0036_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Yield",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "Large delivery truck turns across and blocks the ego lane from the right",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "van",
+      "count": 3,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

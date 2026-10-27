@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-0033",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-1/scene-0033.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [
+      "speed limit"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle follows a bus along a curving semi-urban road.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

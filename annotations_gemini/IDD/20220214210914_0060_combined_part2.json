@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "20220214210914_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Approaching toll booth area with multiple cars merging and slowing down ahead",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 6,
+      "relative_position": "front"
+    }
+  ]
+}

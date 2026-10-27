@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "scene-0095",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Multiple pedestrians crossing from right across lane near median in front of stopped vehicles.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "crossing"
+    }
+  ]
+}

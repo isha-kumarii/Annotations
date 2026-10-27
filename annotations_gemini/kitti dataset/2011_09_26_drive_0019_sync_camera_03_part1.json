@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0019_sync_camera_03_part1",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle passes speed limit 30 zone sign",
+    "time_window": {
+      "start_sec": "00:16",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

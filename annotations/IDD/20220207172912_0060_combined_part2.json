@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220207172912_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Dawn/Dusk"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Toll barrier arm descends across ego lane after lead car passes",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "barrier",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

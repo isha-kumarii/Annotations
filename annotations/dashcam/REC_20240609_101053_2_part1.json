@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_101053_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Security guard walks across ego path in front of vehicle through gate",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_ego_lane"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_inside_gate"
+    }
+  ]
+}

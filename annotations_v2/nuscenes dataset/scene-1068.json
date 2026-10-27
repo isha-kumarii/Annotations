@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-1068",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-10/scene-1068.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "straight road",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "red"
+  },
+  "environmental_conditions": {
+    "weather": "wet",
+    "visibility": "Moderate",
+    "lighting": "Night"
+  },
+  "ego_vehicle": {
+    "maneuver": "follow"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle follows a lead car on a wet urban road at night, coming to a stop behind it at a signalized intersection.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

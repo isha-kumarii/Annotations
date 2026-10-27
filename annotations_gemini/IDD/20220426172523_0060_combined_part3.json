@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220426172523_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Dawn/Dusk"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking on the side of the road in front of ego vehicle path",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:06"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

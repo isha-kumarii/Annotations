@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0099",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Navigating urban street with parked vehicles and delivery trucks on the side.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 2,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_left"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "IDD_0234",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Moderate",
+    "ego_maneuver": "Go straight",
+    "key_event": "Vehicle enters ego lane from right",
+    "time_window": {
+      "start_sec": "00:05",
+      "end_sec": "00:12"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}
+

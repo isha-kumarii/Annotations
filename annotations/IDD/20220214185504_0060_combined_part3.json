@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220214185504_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Moderate",
+    "ego_maneuver": "Follow",
+    "key_event": "Oncoming car drifts into ego lane while passing a truck, producing intense headlight glare",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-1106",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Rain",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Road & Environment",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Driving on wet road surface under rainy nighttime conditions",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

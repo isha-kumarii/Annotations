@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "EVT_20240610_070816_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Likelihood",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian standing on the right median curb adjacent to the roadway",
+    "time_window": {
+      "start_sec": "00:08",
+      "end_sec": "00:12"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

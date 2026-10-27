@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0792",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle proceeds through school zone and passes stationary bus and intersection",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:16"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

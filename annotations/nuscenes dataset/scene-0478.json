@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "scene-0478",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Bicyclist crosses intersection from left in front of traffic",
+    "time_window": {
+      "end_sec": "00:04",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "ego_lane"
+    },
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_081342_2_part2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Following traffic flow on highway with surrounding cars and motorcycles",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

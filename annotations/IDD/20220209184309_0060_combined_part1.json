@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220209184309_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Co-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking on right side of the road while an oncoming motorcycle approaches in the ego travel lane.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

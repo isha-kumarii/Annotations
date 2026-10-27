@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220214212109_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Right Turn",
+    "key_event": "Ego vehicle turns right around a protruding blue roadside structure/obstacle",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "barrier",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pole",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "post",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

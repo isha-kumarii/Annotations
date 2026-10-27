@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_071248_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle proceeds straight along a semi-urban road passing under a pedestrian bridge next to an 80 km/h speed limit sign.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

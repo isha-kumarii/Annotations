@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "20220323101930_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Following slow moving traffic with surrounding auto-rickshaws, motorcycles, and cars in urban congestion",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "auto_rickshaw",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right"
+    }
+  ]
+}

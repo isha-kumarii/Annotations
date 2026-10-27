@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_141859_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Rain",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Gate panels open into ego path from right/center",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 8,
+      "relative_position": "front"
+    },
+    {
+      "class": "golf_cart",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "gate_panel",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

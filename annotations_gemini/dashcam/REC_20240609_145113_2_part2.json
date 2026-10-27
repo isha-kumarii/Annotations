@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_145113_2_part2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Overtake",
+    "key_event": "Ego vehicle drives past a slow-moving backhoe loader in the adjacent lane",
+    "time_window": {
+      "start_sec": "00:05",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_left"
+    }
+  ]
+}

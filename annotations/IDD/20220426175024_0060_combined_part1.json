@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "20220426175024_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Group of pedestrians crossing from left into ego lane ahead",
+    "time_window": {
+      "end_sec": "00:04",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 4,
+      "relative_position": "front_left/front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 6,
+      "relative_position": "crossing/front_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right"
+    }
+  ]
+}

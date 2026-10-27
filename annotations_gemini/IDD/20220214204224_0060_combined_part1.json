@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220214204224_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Navigating urban street at night with oncoming and preceding motorcycles",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "EVT_20240610_071633_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Red car overtakes from the right and merges into the ego vehicle lane ahead",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:08"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

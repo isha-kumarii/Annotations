@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0897",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0897.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stop"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road left to right"
+    }
+  ],
+  "event_details": {
+    "event_description": "Ego vehicle comes to a stop at an intersection behind a lead vehicle while a pedestrian with an umbrella crosses the street from left to right.",
+    "event_class": "Animal and Pedestrian",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

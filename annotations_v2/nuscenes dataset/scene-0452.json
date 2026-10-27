@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0452",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-5/scene-0452.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "unsignalized",
+    "traffic_sign": [
+      "stop"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "stop"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "bus",
+      "maneuver": "stop"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "turn left"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches an intersection in rainy weather conditions, stops for traffic, while other vehicles such as a bus and a pickup truck navigate the intersection.",
+    "event_class": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

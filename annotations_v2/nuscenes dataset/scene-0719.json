@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0719",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-7/scene-0719.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "intersection",
+    "no_of_lanes": 2,
+    "intersection_control": "signalized",
+    "traffic_sign": [],
+    "traffic_light": "green"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "turn right"
+    },
+    {
+      "actor_type": "pedestrian",
+      "maneuver": "crossing road left to right"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle approaches an intersection with a green traffic light, follows traffic flow, and proceeds straight across a bridge while interacting with surrounding vehicles and pedestrians.",
+    "event_class": "Traffic Control",
+    "event_pattern": "Cross-linear",
+    "event_severity": "low"
+  }
+}

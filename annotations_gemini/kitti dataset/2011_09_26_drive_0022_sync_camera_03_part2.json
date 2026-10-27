@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0022_sync_camera_03_part2",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Navigating through parked vehicles and parking garage area into residential street",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 7,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    }
+  ]
+}

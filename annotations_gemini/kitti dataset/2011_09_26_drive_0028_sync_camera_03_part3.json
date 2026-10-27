@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0028_sync_camera_03_part3",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Ego vehicle follows a motorcycle on a rural road",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0023_sync_camera_03_part1",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Multiple parked cars along both sides, right-side cars slightly encroach toward roadway",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front_right"
+    }
+  ]
+}

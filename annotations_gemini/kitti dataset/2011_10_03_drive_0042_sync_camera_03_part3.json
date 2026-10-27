@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "2011_10_03_drive_0042_sync_camera_03_part3",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Silver car passes ego vehicle on the left lane",
+    "time_window": {
+      "start_sec": "00:04",
+      "end_sec": "00:09"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    }
+  ]
+}

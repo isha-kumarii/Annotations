@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0011",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Navigating past parked and stopped trucks along the roadside with construction workers present.",
+    "time_window": {
+      "start_sec": "00:03",
+      "end_sec": "00:13"
+    }
+  },
+  "actors": [
+    {
+      "class": "truck",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

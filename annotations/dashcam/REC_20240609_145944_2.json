@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_145944_2",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Pedestrians walking from left sidewalk into/along roadway while an auto-rickshaw is traveling ahead in the ego lane",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:00"
+    }
+  },
+  "actors": [
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 3,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

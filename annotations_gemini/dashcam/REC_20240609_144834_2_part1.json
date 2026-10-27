@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_144834_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle travels straight along multi-lane road maintaining distance from forward and passing traffic",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:06"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 4,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

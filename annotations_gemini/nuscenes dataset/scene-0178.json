@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "scene-0178",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking across the road ahead",
+    "time_window": {
+      "start_sec": "00:06",
+      "end_sec": "00:11"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

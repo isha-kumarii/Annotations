@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "video_id": "scene-0450",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-5/scene-0450.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "rain",
+    "visibility": "Moderate",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "truck",
+      "maneuver": "stationary"
+    },
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives forward along a wet industrial loading area road during rainy conditions, passing parked trucks and commercial buildings.",
+    "event_class": "Road and Environment",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

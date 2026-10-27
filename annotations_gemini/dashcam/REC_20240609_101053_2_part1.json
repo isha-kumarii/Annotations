@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "REC_20240609_101053_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Causal",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Ego vehicle stops at closed entrance gate and waits for security guard to open it",
+    "time_window": {
+      "start_sec": "00:05",
+      "end_sec": "00:16"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

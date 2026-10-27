@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "20220128165031_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "Navigating through crowded urban street with pedestrians and auto-rickshaws",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 3,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 6,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    }
+  ]
+}

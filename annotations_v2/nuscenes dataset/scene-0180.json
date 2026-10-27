@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "video_id": "scene-0180",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-2/scene-0180.mp4"
+  },
+  "road_network": {
+    "road_type": "semi-urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 1,
+    "intersection_control": "none",
+    "traffic_sign": [
+      "yield"
+    ],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "overcast",
+    "visibility": "Good",
+    "lighting": "Daylight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "stationary"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives along a semi-urban parking area past several parked cars and navigates a curved road.",
+    "event_class": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

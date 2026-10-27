@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_28_drive_0043_sync_camera_03",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrians walking and crossing around a campus sidewalk area.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:14"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 10,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "bicycle",
+      "count": 15,
+      "relative_position": "front_left"
+    }
+  ]
+}

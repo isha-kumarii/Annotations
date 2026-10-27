@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0104_sync_camera_03_part1",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Cyclist and pedestrian enter/cross intersection from the right ahead of ego",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "van",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "bicycle",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

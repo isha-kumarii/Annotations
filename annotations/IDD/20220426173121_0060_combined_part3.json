@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "video_id": "20220426173121_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Motorcycle cuts into ego lane from right between bus and rickshaw",
+    "time_window": {
+      "end_sec": "00:04",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "ego_lane"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

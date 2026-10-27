@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "idd_primary_d1_part_33",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Semi-urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Pedestrian walking on the side of the road alongside parked vehicles and auto-rickshaws.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_right"
+    }
+  ]
+}

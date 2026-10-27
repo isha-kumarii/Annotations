@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220214205120_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Follow",
+    "key_event": "Oncoming car encroaching into ego lane while ego follows a group of motorcycles",
+    "time_window": {
+      "end_sec": "00:04",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "ego_lane"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    }
+  ]
+}

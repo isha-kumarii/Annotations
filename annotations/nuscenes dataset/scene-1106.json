@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-1106",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Rain",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Road & Environment",
+    "event_pattern": "Co-linear",
+    "severity": "Moderate",
+    "ego_maneuver": "Go straight",
+    "key_event": "Wet road and raindrops on windshield reduce visibility while multiple oncoming cars produce glare on the right.",
+    "time_window": {
+      "end_sec": "00:10",
+      "start_sec": "00:05"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 6,
+      "relative_position": "front_right"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "scene-0711",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Navigating through urban construction zone with cones and barriers on road sides",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:20"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

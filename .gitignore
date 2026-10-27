@@ -1,0 +1,33 @@
+# Environment variables & API keys
+.env
+.env.*
+*.env
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Large media files & archives
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.tar
+*.tar.gz
+*.zip
+videos/*
+!videos/.gitkeep
+
+# OS / Editor files
+.DS_Store
+.idea/
+.vscode/
+

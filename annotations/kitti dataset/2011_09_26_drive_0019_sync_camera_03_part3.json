@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0019_sync_camera_03_part3",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "White car from right merges into ego lane, cutting in front of the ego vehicle.",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:02"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

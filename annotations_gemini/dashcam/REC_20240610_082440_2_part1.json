@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "REC_20240610_082440_2_part1",
+    "dataset": "Dashcam"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Pedestrians crossing in front of the ego vehicle at a gate",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:08"
+    }
+  },
+  "actors": [
+    {
+      "class": "pedestrian",
+      "count": 4,
+      "relative_position": "front"
+    }
+  ]
+}

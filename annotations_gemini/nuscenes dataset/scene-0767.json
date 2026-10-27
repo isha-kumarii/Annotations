@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "scene-0767",
+    "dataset": "NuScenes"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Cloudy",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Navigating through urban street passing a traffic light and digital signage trailer.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:08"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "car",
+      "count": 3,
+      "relative_position": "front_left"
+    }
+  ]
+}

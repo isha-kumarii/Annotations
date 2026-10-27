@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "video_id": "scene-0999",
+    "dataset": "NuScenes",
+    "video_path": "videos/Nuscenes Dataset/generated_videos/part-9/scene-0999.mp4"
+  },
+  "road_network": {
+    "road_type": "urban",
+    "road_layout": "curved road",
+    "no_of_lanes": 2,
+    "intersection_control": "none",
+    "traffic_sign": [],
+    "traffic_light": "none"
+  },
+  "environmental_conditions": {
+    "weather": "clear",
+    "visibility": "Moderate",
+    "lighting": "Twilight"
+  },
+  "ego_vehicle": {
+    "maneuver": "go straight"
+  },
+  "npc_actors": [
+    {
+      "actor_type": "car",
+      "maneuver": "follow"
+    }
+  ],
+  "event_details": {
+    "event_description": "The ego vehicle drives straight along a slightly curved urban road during twilight conditions.",
+    "event_class": "Road and Environment",
+    "event_pattern": "Co-linear",
+    "event_severity": "low"
+  }
+}

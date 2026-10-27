@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220214180821_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Rural",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Cloudy",
+    "lighting": "Dawn/Dusk"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "Goat and pedestrian present on the roadside ahead",
+    "time_window": {
+      "start_sec": "00:12",
+      "end_sec": "00:19"
+    }
+  },
+  "actors": [
+    {
+      "class": "animal",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "pedestrian",
+      "count": 1,
+      "relative_position": "sidewalk_left"
+    }
+  ]
+}

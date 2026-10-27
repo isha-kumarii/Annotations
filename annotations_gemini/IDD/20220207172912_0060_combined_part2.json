@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "video_id": "20220207172912_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Highway",
+    "intersection": true,
+    "traffic_control": "Traffic signal",
+    "weather": "Clear",
+    "lighting": "Dawn/Dusk"
+  },
+  "scenario_behavior": {
+    "event_type": "Traffic Control",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Ego vehicle passes through toll booth and proceeds past green traffic light into intersection",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:15"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    }
+  ]
+}

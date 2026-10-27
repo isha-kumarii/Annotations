@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "20220426175024_0060_combined_part1",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Follow",
+    "key_event": "The ego vehicle follows a lead motorcycle and car in the urban road.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:10"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 3,
+      "relative_position": "front"
+    }
+  ]
+}

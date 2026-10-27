@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "20220426153902_0060_combined_part2",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Cross-linear",
+    "severity": "Medium",
+    "ego_maneuver": "Go straight",
+    "key_event": "White car turns into the road from the right, crossing the ego route",
+    "time_window": {
+      "end_sec": "00:15",
+      "start_sec": "00:12"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "bus",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "auto_rickshaw",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 2,
+      "relative_position": "front_left"
+    }
+  ]
+}

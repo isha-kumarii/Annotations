@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "video_id": "20220209201635_0060_combined_part3",
+    "dataset": "IDD"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "Unknown",
+    "weather": "Clear",
+    "lighting": "Night"
+  },
+  "scenario_behavior": {
+    "event_type": "Vehicle Interaction",
+    "event_pattern": "Causal",
+    "severity": "Medium",
+    "ego_maneuver": "Yield",
+    "key_event": "White SUV turns across and blocks ego lane from the right",
+    "time_window": {
+      "end_sec": "00:05",
+      "start_sec": "00:01"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 1,
+      "relative_position": "front_right"
+    },
+    {
+      "class": "truck",
+      "count": 1,
+      "relative_position": "side_right"
+    },
+    {
+      "class": "motorcycle",
+      "count": 1,
+      "relative_position": "front_left"
+    },
+    {
+      "class": "car",
+      "count": 6,
+      "relative_position": "sidewalk_left"
+    },
+    {
+      "class": "car",
+      "count": 2,
+      "relative_position": "sidewalk_right"
+    }
+  ]
+}

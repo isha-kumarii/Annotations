@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0095_sync_camera_03_part1",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": false,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Animal & Pedestrian",
+    "event_pattern": "Cross-linear",
+    "severity": "Low",
+    "ego_maneuver": "Go straight",
+    "key_event": "Cyclists riding on the road ahead of ego vehicle",
+    "time_window": {
+      "start_sec": "00:05",
+      "end_sec": "00:13"
+    }
+  },
+  "actors": [
+    {
+      "class": "bicycle",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "pedestrian",
+      "count": 2,
+      "relative_position": "front"
+    },
+    {
+      "class": "car",
+      "count": 5,
+      "relative_position": "front_right"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "video_id": "2011_09_26_drive_0035_sync_camera_03",
+    "dataset": "KITTI"
+  },
+  "environment": {
+    "road_type": "Urban",
+    "intersection": true,
+    "traffic_control": "None",
+    "weather": "Clear",
+    "lighting": "Day"
+  },
+  "scenario_behavior": {
+    "event_type": "Obstacle Detection",
+    "event_pattern": "Co-linear",
+    "severity": "Low",
+    "ego_maneuver": "Stop",
+    "key_event": "Ego vehicle navigates through a narrow street with parked cars and stops at an intersection parking area.",
+    "time_window": {
+      "start_sec": "00:00",
+      "end_sec": "00:12"
+    }
+  },
+  "actors": [
+    {
+      "class": "car",
+      "count": 8,
+      "relative_position": "front"
+    },
+    {
+      "class": "van",
+      "count": 2,
+      "relative_position": "front_right"
+    }
+  ]
+}
